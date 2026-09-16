@@ -1,0 +1,31 @@
+DRAFT NOTICE — REVIEW REMAINING DETAILS BEFORE RELEASE
+This is not the app's operative licence and has not been added to its interface.
+
+Proposed notice:
+
+Code Loop
+Copyright (c) 2026 Waldo Trytsman.
+Company name supplied by the owner: Code Waldo.
+All rights reserved in the portions owned by the named owner.
+
+Third-party components and assets remain subject to their respective licences.
+In particular, the bundled Manrope and Instrument Serif font files remain
+licensed under the SIL Open Font License 1.1. This notice does not restrict
+the permissions those licences grant. See THIRD-PARTY-NOTICES.md and the
+font copyright and licence files distributed with the product.
+
+For permissions concerning owner-controlled material:
+[CONFIRMED RIGHTS CONTACT]
+
+Before using:
+- Fill in the rights contact.
+- Confirm whether Waldo Trytsman personally or a separate legal entity is the
+  rights holder and future licensor; adapt the notice to that confirmed position.
+- Confirm the basis and scope of the ownership claim.
+- Match the product name and year to the release.
+- Link to the actual location of third-party notices in the release package.
+- Prepare separate customer licence/service terms suited to the product.
+
+This template is not a registration, a transfer of rights, a non-infringement
+guarantee or a complete end-user licence agreement. It does not claim exclusive
+rights to the general learning-game concept, third-party assets, or a product name.

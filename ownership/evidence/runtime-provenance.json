@@ -1,0 +1,728 @@
+{
+  "recordedAt": "2026-09-16T14:45:48.008Z",
+  "scope": "Local provenance comparison of executable implementation, excluding curriculum content, against provided original and reviewed source copies; no Internet originality investigation.",
+  "roots": {
+    "game": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\code-loop",
+    "original": "C:/Users/waldo/OneDrive/Desktop/site-audit",
+    "review": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\site-flow-preview\\site"
+  },
+  "sourceFileCounts": {
+    "original": 65,
+    "review": 93
+  },
+  "method": "Whole-file SHA-256 comparison; whitespace-normalized individual line matches >=35 characters; selected game-function/storage markers. Source includes code extensions and package.json excluding dependencies, build/generated directories, ownership and verification records, old iterations and Zone.Identifier metadata.",
+  "limits": [
+    "No source match is not proof of legal originality, copyright protection, non-infringement, or exclusivity.",
+    "Ordinary HTML/CSS/JS idioms and browser/Node APIs can occur independently in many projects.",
+    "This checks the supplied local copies, not every possible prior source.",
+    "Creation history is supported by current-task development record, not independently timestamped authorship evidence.",
+    "Teaching examples in src/lessons.js are being audited separately."
+  ],
+  "findings": [
+    {
+      "category": "new generated implementation",
+      "files": [
+        "src/learning.js"
+      ],
+      "evidence": [
+        "Imports only local lessons.js at line 1.",
+        "Distinct storage key line 3; six-round constant line 4; new progress parser 10, scheduler 33, scoring 48, sessions 62/68, confidence 80 and answer/shuffle functions 88/94."
+      ],
+      "explanation": "Current task development record attributes generation to Codex at user direction. These game-specific markers are absent in compared website source."
+    },
+    {
+      "category": "new generated interface and practice lab",
+      "files": [
+        "src/app.js",
+        "styles.css",
+        "index.html"
+      ],
+      "evidence": [
+        "app.js lines 1-2 import local curriculum and learning engine, not React or website modules.",
+        "app.js:49 shell, :69 lesson, :87 progress, :97 lab, :102 previewDocument and :115 inspectCss implement game UI and labs.",
+        "styles.css contains new cream/lime/sidebar/lesson-specific layout, beginning :17 variables and :242 sidebar.",
+        "Original src/main.jsx lines 1-2 use React/hydrateRoot and original src/App.jsx assembles business website sections."
+      ],
+      "explanation": "The game teaches website ideas using a different implementation. Fonts are explicitly reused; snippets and ordinary patterns may overlap."
+    },
+    {
+      "category": "new generated local tooling",
+      "files": [
+        "server.mjs",
+        "start.cmd",
+        "start.sh",
+        "package.json",
+        "tests/learning.test.mjs"
+      ],
+      "evidence": [
+        "server.mjs:1-5 imports only Node core modules, :9 HTTP server, :37 binds local address.",
+        "Game package.json has no dependencies or devDependencies; website package.json has React/ReactDOM and Vite/Wrangler.",
+        "tests/learning.test.mjs imports local learning functions and server and tests game-specific behavior."
+      ],
+      "explanation": "Task-created local server, launchers and tests are not website runtime ports."
+    },
+    {
+      "category": "existing third-party assets copied through user website",
+      "files": [
+        "assets/manrope-latin.woff2",
+        "assets/instrument-serif-italic-latin.woff2",
+        "assets/LICENSE-Manrope.txt",
+        "assets/LICENSE-InstrumentSerif.txt"
+      ],
+      "evidence": [
+        "SHA-256 equality across original site-audit/public/fonts, reviewed site-flow-preview/site/public/fonts, and code-loop/assets."
+      ],
+      "explanation": "These copied fonts/notices retain their own SIL OFL licences; inclusion in the user website does not convert the fonts into user-owned original assets."
+    },
+    {
+      "category": "potentially imprecise UI provenance wording",
+      "files": [
+        "src/app.js"
+      ],
+      "evidence": [
+        "line 74 says A small teaching excerpt from your project for every lesson."
+      ],
+      "explanation": "Some lesson examples are simplified/invented teaching examples rather than literal copied source; curriculum review should distinguish them."
+    }
+  ],
+  "fonts": [
+    {
+      "name": "manrope-latin.woff2",
+      "identicalAcrossAllThree": true,
+      "game": {
+        "path": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\code-loop\\assets\\manrope-latin.woff2",
+        "bytes": 24836,
+        "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+      },
+      "original": {
+        "path": "C:\\Users\\waldo\\OneDrive\\Desktop\\site-audit\\public\\fonts\\manrope-latin.woff2",
+        "bytes": 24836,
+        "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+      },
+      "review": {
+        "path": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\site-flow-preview\\site\\public\\fonts\\manrope-latin.woff2",
+        "bytes": 24836,
+        "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+      }
+    },
+    {
+      "name": "instrument-serif-italic-latin.woff2",
+      "identicalAcrossAllThree": true,
+      "game": {
+        "path": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\code-loop\\assets\\instrument-serif-italic-latin.woff2",
+        "bytes": 22128,
+        "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7"
+      },
+      "original": {
+        "path": "C:\\Users\\waldo\\OneDrive\\Desktop\\site-audit\\public\\fonts\\instrument-serif-italic-latin.woff2",
+        "bytes": 22128,
+        "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7"
+      },
+      "review": {
+        "path": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\site-flow-preview\\site\\public\\fonts\\instrument-serif-italic-latin.woff2",
+        "bytes": 22128,
+        "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7"
+      }
+    },
+    {
+      "name": "LICENSE-Manrope.txt",
+      "identicalAcrossAllThree": true,
+      "game": {
+        "path": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\code-loop\\assets\\LICENSE-Manrope.txt",
+        "bytes": 4384,
+        "sha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c"
+      },
+      "original": {
+        "path": "C:\\Users\\waldo\\OneDrive\\Desktop\\site-audit\\public\\fonts\\LICENSE-Manrope.txt",
+        "bytes": 4384,
+        "sha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c"
+      },
+      "review": {
+        "path": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\site-flow-preview\\site\\public\\fonts\\LICENSE-Manrope.txt",
+        "bytes": 4384,
+        "sha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c"
+      }
+    },
+    {
+      "name": "LICENSE-InstrumentSerif.txt",
+      "identicalAcrossAllThree": true,
+      "game": {
+        "path": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\code-loop\\assets\\LICENSE-InstrumentSerif.txt",
+        "bytes": 4405,
+        "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+      },
+      "original": {
+        "path": "C:\\Users\\waldo\\OneDrive\\Desktop\\site-audit\\public\\fonts\\LICENSE-InstrumentSerif.txt",
+        "bytes": 4405,
+        "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+      },
+      "review": {
+        "path": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\site-flow-preview\\site\\public\\fonts\\LICENSE-InstrumentSerif.txt",
+        "bytes": 4405,
+        "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "path": "src/app.js",
+      "sha256": "14c057c06f89695c3ea41df22977496515d828efb4f4258779787c8ca037bf06",
+      "comparisons": {
+        "original": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        },
+        "review": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        }
+      }
+    },
+    {
+      "path": "src/learning.js",
+      "sha256": "ee2827693533dc109fa1174d271a99d6f1729165dcb43ca47d47584e0535eb1c",
+      "comparisons": {
+        "original": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        },
+        "review": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        }
+      }
+    },
+    {
+      "path": "index.html",
+      "sha256": "e9d6bf437bcf8fc2131abb0e0776bf22612917eef77d0ca5ed668d0612a283bd",
+      "comparisons": {
+        "original": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        },
+        "review": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        }
+      }
+    },
+    {
+      "path": "styles.css",
+      "sha256": "7aae4a8caf14c73961b2b674d424d454d52a4c87d99132e8c405521930869f8e",
+      "comparisons": {
+        "original": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        },
+        "review": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        }
+      }
+    },
+    {
+      "path": "server.mjs",
+      "sha256": "3729c079c6a7af52290158f1655c32587a9fc3a68fc030bf36f17bc4e0572b1f",
+      "comparisons": {
+        "original": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": [
+            {
+              "gameLine": 24,
+              "sourceFile": "vite.config.js",
+              "sourceLine": 24,
+              "text": "'X-Content-Type-Options': 'nosniff',"
+            }
+          ]
+        },
+        "review": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": [
+            {
+              "gameLine": 24,
+              "sourceFile": "vite.config.js",
+              "sourceLine": 24,
+              "text": "'X-Content-Type-Options': 'nosniff',"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "tests/learning.test.mjs",
+      "sha256": "afcb892f9ca6e946b898b6b9c6f423ccf8583a1606900b0e3dcd4f3c2404a6e0",
+      "comparisons": {
+        "original": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": [
+            {
+              "gameLine": 2,
+              "sourceFile": "tests/creative-pass.test.js",
+              "sourceLine": 2,
+              "text": "import assert from 'node:assert/strict'"
+            },
+            {
+              "gameLine": 2,
+              "sourceFile": "tests/review-fixes.test.js",
+              "sourceLine": 2,
+              "text": "import assert from 'node:assert/strict'"
+            }
+          ]
+        },
+        "review": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": [
+            {
+              "gameLine": 2,
+              "sourceFile": "scripts/check-build.mjs",
+              "sourceLine": 1,
+              "text": "import assert from 'node:assert/strict'"
+            },
+            {
+              "gameLine": 2,
+              "sourceFile": "tests/creative-pass.test.js",
+              "sourceLine": 2,
+              "text": "import assert from 'node:assert/strict'"
+            },
+            {
+              "gameLine": 2,
+              "sourceFile": "tests/maintenance.test.js",
+              "sourceLine": 2,
+              "text": "import assert from 'node:assert/strict'"
+            },
+            {
+              "gameLine": 2,
+              "sourceFile": "tests/review-fixes.test.js",
+              "sourceLine": 2,
+              "text": "import assert from 'node:assert/strict'"
+            },
+            {
+              "gameLine": 2,
+              "sourceFile": "tests/worker.test.js",
+              "sourceLine": 2,
+              "text": "import assert from 'node:assert/strict'"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "start.cmd",
+      "sha256": "c769896ff5d02204ece2a7daac358da932b460999d495213b1f6242f1b70792e",
+      "comparisons": {
+        "original": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        },
+        "review": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        }
+      }
+    },
+    {
+      "path": "start.sh",
+      "sha256": "bfec4640de6c29909c80b0de73124ebf42556149da19b4e6812c4e33066d2e72",
+      "comparisons": {
+        "original": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        },
+        "review": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        }
+      }
+    },
+    {
+      "path": "package.json",
+      "sha256": "62a0679e79687a98e07791a308851aae27dd8a5bc2b5d6d8a259d847a675cd31",
+      "comparisons": {
+        "original": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        },
+        "review": {
+          "wholeFileMatches": [],
+          "normalizedLineMatchesAtLeast35Characters": []
+        }
+      }
+    }
+  ],
+  "markerChecks": [
+    {
+      "marker": "siterevive-code-loop-v1",
+      "game": [
+        {
+          "path": "src/learning.js",
+          "line": 3
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "SESSION_LENGTH",
+      "game": [
+        {
+          "path": "src/app.js",
+          "line": 2
+        },
+        {
+          "path": "src/app.js",
+          "line": 57
+        },
+        {
+          "path": "src/app.js",
+          "line": 74
+        },
+        {
+          "path": "src/learning.js",
+          "line": 4
+        },
+        {
+          "path": "src/learning.js",
+          "line": 23
+        },
+        {
+          "path": "src/learning.js",
+          "line": 24
+        },
+        {
+          "path": "src/learning.js",
+          "line": 73
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "freshProgress",
+      "game": [
+        {
+          "path": "src/app.js",
+          "line": 2
+        },
+        {
+          "path": "src/app.js",
+          "line": 8
+        },
+        {
+          "path": "src/learning.js",
+          "line": 8
+        },
+        {
+          "path": "src/learning.js",
+          "line": 12
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 4
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 25
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 27
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 34
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 42
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 50
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "recordAnswer",
+      "game": [
+        {
+          "path": "src/learning.js",
+          "line": 48
+        },
+        {
+          "path": "src/learning.js",
+          "line": 71
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 4
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 27
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 30
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 34
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 37
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 43
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "chooseLesson",
+      "game": [
+        {
+          "path": "src/learning.js",
+          "line": 33
+        },
+        {
+          "path": "src/learning.js",
+          "line": 63
+        },
+        {
+          "path": "src/learning.js",
+          "line": 74
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 4
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 25
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 31
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "parseProgress",
+      "game": [
+        {
+          "path": "src/app.js",
+          "line": 2
+        },
+        {
+          "path": "src/app.js",
+          "line": 9
+        },
+        {
+          "path": "src/app.js",
+          "line": 202
+        },
+        {
+          "path": "src/learning.js",
+          "line": 10
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 4
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 57
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 60
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 61
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 62
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "completeRound",
+      "game": [
+        {
+          "path": "src/app.js",
+          "line": 2
+        },
+        {
+          "path": "src/app.js",
+          "line": 162
+        },
+        {
+          "path": "src/learning.js",
+          "line": 68
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 4
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 51
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 56
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "shuffledChoices",
+      "game": [
+        {
+          "path": "src/app.js",
+          "line": 2
+        },
+        {
+          "path": "src/app.js",
+          "line": 74
+        },
+        {
+          "path": "src/learning.js",
+          "line": 94
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 4
+        },
+        {
+          "path": "tests/learning.test.mjs",
+          "line": 16
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "dueRound",
+      "game": [
+        {
+          "path": "src/learning.js",
+          "line": 17
+        },
+        {
+          "path": "src/learning.js",
+          "line": 30
+        },
+        {
+          "path": "src/learning.js",
+          "line": 57
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "dueAt",
+      "game": [
+        {
+          "path": "src/learning.js",
+          "line": 17
+        },
+        {
+          "path": "src/learning.js",
+          "line": 30
+        },
+        {
+          "path": "src/learning.js",
+          "line": 57
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "code-loop-progress-",
+      "game": [
+        {
+          "path": "src/app.js",
+          "line": 171
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "demo-actions",
+      "game": [
+        {
+          "path": "src/app.js",
+          "line": 19
+        },
+        {
+          "path": "src/app.js",
+          "line": 95
+        },
+        {
+          "path": "src/app.js",
+          "line": 99
+        },
+        {
+          "path": "src/app.js",
+          "line": 104
+        },
+        {
+          "path": "src/app.js",
+          "line": 122
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "inspectCss",
+      "game": [
+        {
+          "path": "src/app.js",
+          "line": 115
+        },
+        {
+          "path": "src/app.js",
+          "line": 181
+        }
+      ],
+      "original": [],
+      "review": []
+    },
+    {
+      "marker": "Growing confidence",
+      "game": [
+        {
+          "path": "src/app.js",
+          "line": 47
+        },
+        {
+          "path": "src/app.js",
+          "line": 57
+        },
+        {
+          "path": "src/app.js",
+          "line": 89
+        }
+      ],
+      "original": [],
+      "review": []
+    }
+  ]
+}

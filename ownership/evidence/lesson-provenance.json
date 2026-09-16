@@ -1,0 +1,1707 @@
+{
+  "reviewedAt": "2026-09-16T14:47:16.283Z",
+  "scope": "Read-only comparison of30 lesson examples,3 CSS labs and20 glossary entries; runtime not audited in this subtask.",
+  "roots": {
+    "original": "C:/Users/waldo/OneDrive/Desktop/site-audit",
+    "current": "C:/Users/waldo/Documents/Codex/2026-09-16/i-x20/outputs/site-flow-preview/site",
+    "game": "C:/Users/waldo/Documents/Codex/2026-09-16/i-x20/outputs/code-loop"
+  },
+  "limitations": [
+    "Static source comparison documents relationships, not legal authorship, title, originality, or exclusive rights.",
+    "User supplied original tree may itself include third-party or prior AI contributions; no contracts or original creation records inspected.",
+    "The game questions, explanations, chapter/glossary arrangement, quiz and practice UI are newly created content about the website; matching a short generic idiom does not establish historical origination.",
+    "Paths shown in lessons generally target the refactored/visual copy; they are not all present in original supplied layout."
+  ],
+  "summary": {
+    "lessonCount": 30,
+    "labCount": 3,
+    "glossaryCount": 20,
+    "lessonRelations": {
+      "adapted-original-source": 13,
+      "project-map": 2,
+      "refactored-project-map": 1,
+      "generated-teaching-example": 2,
+      "adapted-visual-pass-source": 3,
+      "original-source-fragment": 5,
+      "generated-example-from-original-behaviour": 2,
+      "adapted-refactor-source": 1,
+      "generated-example-from-refactor-tooling": 1
+    },
+    "conclusion": "Curriculum is grounded in specific original website values,labels,handlers and CSS plus refactor/visual-pass changes. It is not a direct execution or wholesale repackaging of the original website code."
+  },
+  "lessons": [
+    {
+      "id": "files-prices",
+      "title": "A price has a home.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 51
+      },
+      "displayedFile": "src/content/hosting.js",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/content/hosting.js",
+          "line": 17,
+          "note": "",
+          "sourceLine": "    price: { monthly: 289, annual: 2890, setup: 750 },"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 343,
+          "note": "",
+          "sourceLine": "    price: { monthly: 289, annual: 2890, setup: 750 },"
+        }
+      ],
+      "notes": "Exact original price values 289/2890/750, reformatted into a multiline object excerpt; src/content path was introduced by the refactor. Setup750 is not invented.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "files-styles",
+      "title": "Find the button's clothes.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 69
+      },
+      "displayedFile": "src/styles/global.css",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/styles/global.css",
+          "line": 313,
+          "note": "",
+          "sourceLine": ".button {"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/global.css",
+          "line": 311,
+          "note": "",
+          "sourceLine": ".button {"
+        },
+        {
+          "root": "current",
+          "path": "src/styles/tokens.css",
+          "line": 37,
+          "note": "",
+          "sourceLine": "  --radius-sm: 10px;"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/tokens.css",
+          "line": 37,
+          "note": "",
+          "sourceLine": "  --radius-sm: 10px;"
+        }
+      ],
+      "notes": "A shortened rule. Source has min-height44 and border-radius:var(--radius-sm); token resolves to10px. Literal10px is an educational simplification, not verbatim source.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "files-behaviour",
+      "title": "Find what makes it move.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 87
+      },
+      "displayedFile": "src/features/work/useWorkCarousel.js",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/work/useWorkCarousel.js",
+          "line": 58,
+          "note": "",
+          "sourceLine": "  const step = (dir) => {"
+        },
+        {
+          "root": "original",
+          "path": "src/hooks/useWorkCarousel.js",
+          "line": 58,
+          "note": "",
+          "sourceLine": "  const step = (dir) => {"
+        }
+      ],
+      "notes": "Wrap formula is original. Excerpt replaces wrapped-state detection and commitMove(next,dir,wrapped) with setIndex(next); label correctly says shortened excerpt. Feature path is refactored.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "files-assets",
+      "title": "A picture is a file too.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 105
+      },
+      "displayedFile": "public/showcase/",
+      "relation": "project-map",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/content/work.js",
+          "line": 10,
+          "note": "",
+          "sourceLine": "    image: '/showcase/sbb.jpg',"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 201,
+          "note": "",
+          "sourceLine": "    image: '/showcase/sbb.jpg',"
+        },
+        {
+          "root": "current",
+          "path": "public/showcase/sbb.jpg",
+          "line": null,
+          "note": "Binary exists"
+        },
+        {
+          "root": "original",
+          "path": "public/showcase/sbb.jpg",
+          "line": null,
+          "note": "Binary exists"
+        },
+        {
+          "root": "current",
+          "path": "public/showcase/sbb-mobile.jpg",
+          "line": null,
+          "note": "Binary exists"
+        },
+        {
+          "root": "original",
+          "path": "public/showcase/sbb-mobile.jpg",
+          "line": null,
+          "note": "Binary exists"
+        }
+      ],
+      "notes": "Generated directory diagram of existing assets. Screenshots are referenced in teaching text, not bundled in game.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "files-source",
+      "title": "Edit the recipe.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 123
+      },
+      "displayedFile": "Project folders",
+      "relation": "project-map",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "package.json",
+          "line": 8,
+          "note": "",
+          "sourceLine": "    \"build\": \"vite build && vite build --ssr src/app/entry-server.jsx --outDir dist-ssr && node scripts/prerender.js\","
+        },
+        {
+          "root": "original",
+          "path": "package.json",
+          "line": 8,
+          "note": "",
+          "sourceLine": "    \"build\": \"vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node prerender.js\","
+        }
+      ],
+      "notes": "Generated source/public/dist explanation. Both projects use Vite build. Diagram is not copied source.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "files-theme",
+      "title": "Keep a feature together.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 141
+      },
+      "displayedFile": "src/features/theme/",
+      "relation": "refactored-project-map",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/theme/PaletteControl.jsx",
+          "line": 20,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        },
+        {
+          "root": "current",
+          "path": "src/features/theme/colors.js",
+          "line": 15,
+          "note": "",
+          "sourceLine": "function hslToRgb(h, sat, l) {"
+        },
+        {
+          "root": "current",
+          "path": "src/features/theme/palettes.js",
+          "line": 1,
+          "note": "",
+          "sourceLine": "export const PALETTES = ["
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 129,
+          "note": "",
+          "sourceLine": "function hslToRgb(h, sat, l) {"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 171,
+          "note": "",
+          "sourceLine": "function PaletteControl() {"
+        }
+      ],
+      "notes": "Directory diagram describes refactor. Colour calculations and PaletteControl existed inside original Navbar.jsx; separate files/folder were introduced during restructure.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "markup-label",
+      "title": "Read a button aloud.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 159
+      },
+      "displayedFile": "src/components/Hero.jsx",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/components/Hero.jsx",
+          "line": 126,
+          "note": "",
+          "sourceLine": "              Discuss your website"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Hero.jsx",
+          "line": 133,
+          "note": "",
+          "sourceLine": "              Discuss your website"
+        }
+      ],
+      "notes": "Text Discuss your website matches original. Original is an anchor with href/contact,class names,pointer handlers,ArrowIcon. Teaching example deliberately changes anchor to button and states this.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "markup-class",
+      "title": "Connect JSX to CSS.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 177
+      },
+      "displayedFile": "src/components/Hero.jsx",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/components/Hero.jsx",
+          "line": 121,
+          "note": "",
+          "sourceLine": "              className=\"button button-primary button-large\""
+        },
+        {
+          "root": "original",
+          "path": "src/components/Hero.jsx",
+          "line": 128,
+          "note": "",
+          "sourceLine": "              className=\"button button-primary button-large\""
+        }
+      ],
+      "notes": "Retains two original CSS classes and CTA label but omits button-large,href,handlers,icon. Generated minimal selector exercise.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "markup-href",
+      "title": "Where does this link go?",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 195
+      },
+      "displayedFile": "src/components/Hero.jsx",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/components/Hero.jsx",
+          "line": 122,
+          "note": "",
+          "sourceLine": "              href=\"#contact\""
+        },
+        {
+          "root": "original",
+          "path": "src/components/Hero.jsx",
+          "line": 129,
+          "note": "",
+          "sourceLine": "              href=\"#contact\""
+        },
+        {
+          "root": "current",
+          "path": "src/features/enquiry/ContactSection.jsx",
+          "line": 16,
+          "note": "",
+          "sourceLine": "    <section id=\"contact\" className=\"section contact\" aria-labelledby=\"contact-title\">"
+        },
+        {
+          "root": "original",
+          "path": "src/components/ContactSection.jsx",
+          "line": 17,
+          "note": "",
+          "sourceLine": "    <section id=\"contact\" className=\"section contact\" aria-labelledby=\"contact-title\">"
+        }
+      ],
+      "notes": "Retains original href=#contact and CTA label, omits styling,handlers,icon. Contact ID exists in both trees.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "markup-value",
+      "title": "Let the data speak.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 213
+      },
+      "displayedFile": "src/features/hosting/HostingSection.jsx",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/hosting/HostingSection.jsx",
+          "line": 137,
+          "note": "",
+          "sourceLine": "      <h3 className=\"offer-name\">{plan.name}</h3>"
+        },
+        {
+          "root": "original",
+          "path": "src/components/HostingSection.jsx",
+          "line": 143,
+          "note": "",
+          "sourceLine": "      <h3 className=\"offer-name\">{plan.name}</h3>"
+        },
+        {
+          "root": "current",
+          "path": "src/content/hosting.js",
+          "line": 7,
+          "note": "",
+          "sourceLine": "    name: 'Static Lite',"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 333,
+          "note": "",
+          "sourceLine": "    name: 'Static Lite',"
+        }
+      ],
+      "notes": "Original h3 displays plan.name and original data contains Static Lite. Example invents a local one-property const plan and removes className; not a contiguous source extract.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "markup-props",
+      "title": "One component, different input.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 231
+      },
+      "displayedFile": "src/features/hosting/HostingSection.jsx",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/hosting/HostingSection.jsx",
+          "line": 217,
+          "note": "",
+          "sourceLine": "                <PlanCard key={plan.id} plan={plan} billing={billing} featured={plan.id === 'static'} glow={glow} rail={{ index, count: HOSTING_PLANS.length, trackRef: plansRail }} />"
+        },
+        {
+          "root": "original",
+          "path": "src/components/HostingSection.jsx",
+          "line": 209,
+          "note": "",
+          "sourceLine": "                <PlanCard key={plan.id} plan={plan} billing={billing} featured={plan.id === 'static'} glow={glow} rail={{ index, count: HOSTING_PLANS.length, trackRef: plansRail }} />"
+        }
+      ],
+      "notes": "Original PlanCard gets dynamic billing plus key,plan,featured,glow,rail. Example hard-codes annual and omits remaining props; illustrates syntax, not a complete runnable PlanCard call.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "markup-edit",
+      "title": "Make the next step clearer.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 249
+      },
+      "displayedFile": "Teaching example · button label",
+      "relation": "generated-teaching-example",
+      "evidence": [],
+      "notes": "Generic fill-in button markup with Start practice label; not found as original website lesson/content. Common button syntax is not origin evidence.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "styles-height",
+      "title": "Give a finger enough room.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 265
+      },
+      "displayedFile": "src/styles/global.css",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/styles/global.css",
+          "line": 318,
+          "note": "",
+          "sourceLine": "  min-height: 44px;"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/global.css",
+          "line": 316,
+          "note": "",
+          "sourceLine": "  min-height: 44px;"
+        }
+      ],
+      "notes": "Exercise removes value from original .button min-height44 declaration. 44px predates audit/refactor.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "styles-padding",
+      "title": "Space inside the box.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 282
+      },
+      "displayedFile": "Teaching example · card CSS",
+      "relation": "generated-teaching-example",
+      "evidence": [],
+      "notes": "Generic .card padding24 exercise; no direct .card rule provenance established. Original project uses padding elsewhere, but generic property matches do not establish copying.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "styles-gap",
+      "title": "Space between neighbours.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 300
+      },
+      "displayedFile": "src/styles/work.css",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/styles/work.css",
+          "line": 484,
+          "note": "",
+          "sourceLine": ".stage-nav {"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/work.css",
+          "line": 462,
+          "note": "",
+          "sourceLine": ".stage-nav {"
+        }
+      ],
+      "notes": "Original .stage-nav display:flex and gap10 retained; align-items:center omitted.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "styles-mobile",
+      "title": "Read the screen rule.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 318
+      },
+      "displayedFile": "src/styles/work.css",
+      "relation": "adapted-visual-pass-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/styles/work.css",
+          "line": 684,
+          "note": "",
+          "sourceLine": "@media (max-width: 700px) {"
+        },
+        {
+          "root": "current",
+          "path": "src/styles/work.css",
+          "line": 694,
+          "note": "",
+          "sourceLine": "  .stage-btn { width: 44px; height: 44px; flex: 0 0 44px; }"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/work.css",
+          "line": 687,
+          "note": "",
+          "sourceLine": "@media (max-width: 700px) {"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/work.css",
+          "line": 468,
+          "note": "",
+          "sourceLine": ".stage-btn {"
+        }
+      ],
+      "notes": "700px breakpoint existed originally, but current mobile .stage-btn width44/height44/flex44 rule was introduced in visual work; excerpt includes only width. Original .stage-btn was46px with no44 override at this media rule.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "styles-grid",
+      "title": "Let a column shrink.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 336
+      },
+      "displayedFile": "src/styles/work.css",
+      "relation": "adapted-visual-pass-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/styles/work.css",
+          "line": 38,
+          "note": "",
+          "sourceLine": ".work-body {"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/work.css",
+          "line": 39,
+          "note": "",
+          "sourceLine": ".work-body {"
+        }
+      ],
+      "notes": "Original .work-body had display:grid and gap18. grid-template-columns:minmax(0,1fr) was added during visual pass; example drops gap. Correctly refers to a change we used, not original supplied code.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "styles-stable",
+      "title": "Make room before it changes.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 354
+      },
+      "displayedFile": "src/styles/hosting.css",
+      "relation": "adapted-visual-pass-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/styles/hosting.css",
+          "line": 214,
+          "note": "",
+          "sourceLine": ".offer-price {"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/hosting.css",
+          "line": 191,
+          "note": "",
+          "sourceLine": ".offer-price {"
+        }
+      ],
+      "notes": "min-height90 was added in visual work to original .offer-price grid rule. Example omits display:grid,gap,margin. Reduced billing movement depended on complete layout, not solely this snippet.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "react-state",
+      "title": "A value the screen remembers.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 372
+      },
+      "displayedFile": "Teaching excerpt · theme picker",
+      "relation": "original-source-fragment",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/theme/PaletteControl.jsx",
+          "line": 20,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 174,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        }
+      ],
+      "notes": "Same state declaration with added semicolon; a ubiquitous React idiom, so match alone is not unique authorship proof. Theme association is supported by source context.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "react-click",
+      "title": "Follow the click.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 390
+      },
+      "displayedFile": "Teaching excerpt · theme picker",
+      "relation": "generated-example-from-original-behaviour",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/theme/PaletteControl.jsx",
+          "line": 20,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 174,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        },
+        {
+          "root": "current",
+          "path": "src/features/theme/PaletteControl.jsx",
+          "line": 105,
+          "note": "",
+          "sourceLine": "  const startHold = () => { heldRef.current = false; clearTimeout(holdTimer.current); holdTimer.current = setTimeout(() => { heldRef.current = true; setOpen(true) }, HOLD_MS) }"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 259,
+          "note": "",
+          "sourceLine": "  const startHold = () => { heldRef.current = false; clearTimeout(holdTimer.current); holdTimer.current = setTimeout(() => { heldRef.current = true; setOpen(true) }, HOLD_MS) }"
+        },
+        {
+          "root": "current",
+          "path": "src/features/theme/PaletteControl.jsx",
+          "line": 180,
+          "note": "",
+          "sourceLine": "        onContextMenu={(e) => { e.preventDefault(); setOpen(true) }}"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 334,
+          "note": "",
+          "sourceLine": "        onContextMenu={(e) => { e.preventDefault(); setOpen(true) }}"
+        }
+      ],
+      "notes": "Original picker sets open true after hold or context menu/ArrowDown. Teaching button Open picker with direct onClick setOpen(true) is invented and simplified; it is not original interaction markup.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "react-next",
+      "title": "Use the previous value.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 408
+      },
+      "displayedFile": "Teaching excerpt · carousel",
+      "relation": "generated-example-from-original-behaviour",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/work/useWorkCarousel.js",
+          "line": 38,
+          "note": "",
+          "sourceLine": "      setIndex((current) => (current + 1) % count)"
+        },
+        {
+          "root": "original",
+          "path": "src/hooks/useWorkCarousel.js",
+          "line": 38,
+          "note": "",
+          "sourceLine": "      setIndex((current) => (current + 1) % count)"
+        }
+      ],
+      "notes": "Original updater is setIndex((current)=>(current+1)%count). Exercise removes modulo wrapping and parentheses. Explanation acknowledges complete carousel wraps.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "react-condition",
+      "title": "One condition, two labels.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 426
+      },
+      "displayedFile": "src/features/enquiry/ProjectEnquiryForm.jsx",
+      "relation": "original-source-fragment",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/enquiry/ProjectEnquiryForm.jsx",
+          "line": 153,
+          "note": "",
+          "sourceLine": "          {isSubmitting ? 'Sending…' : 'Send project enquiry'}"
+        },
+        {
+          "root": "original",
+          "path": "src/components/ProjectEnquiryForm.jsx",
+          "line": 197,
+          "note": "",
+          "sourceLine": "          {isSubmitting ? 'Sending…' : 'Send project enquiry'}"
+        }
+      ],
+      "notes": "Conditional expression is verbatim original source between JSX braces; title/path moved during refactor.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "react-map",
+      "title": "Build a card for each plan.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 444
+      },
+      "displayedFile": "Teaching excerpt · hosting section",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/hosting/HostingSection.jsx",
+          "line": 216,
+          "note": "",
+          "sourceLine": "              {HOSTING_PLANS.map((plan, index) => ("
+        },
+        {
+          "root": "original",
+          "path": "src/components/HostingSection.jsx",
+          "line": 208,
+          "note": "",
+          "sourceLine": "              {HOSTING_PLANS.map((plan, index) => ("
+        }
+      ],
+      "notes": "Original HOSTING_PLANS.map renders PlanCard with stable plan.id key. Teaching excerpt omits index,billing,featured,glow,rail and simplifies arrow parameter formatting.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "react-cleanup",
+      "title": "Stop the old timer.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 462
+      },
+      "displayedFile": "src/features/work/useWorkCarousel.js",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/work/useWorkCarousel.js",
+          "line": 34,
+          "note": "",
+          "sourceLine": "  useEffect(() => {"
+        },
+        {
+          "root": "original",
+          "path": "src/hooks/useWorkCarousel.js",
+          "line": 34,
+          "note": "",
+          "sourceLine": "  useEffect(() => {"
+        }
+      ],
+      "notes": "Original effect has paused guard, window.setInterval inline callback, AUTOPLAY_MS=20000, window.clearInterval and [paused,count] dependencies. Example replaces callback with undefined-in-excerpt next, inlines20000, uses [] and omits guards. Conceptual cleanup teaching; not a complete runnable replacement.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "fixes-price",
+      "title": "Change only the monthly price.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 480
+      },
+      "displayedFile": "src/content/hosting.js",
+      "relation": "adapted-original-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/content/hosting.js",
+          "line": 17,
+          "note": "",
+          "sourceLine": "    price: { monthly: 289, annual: 2890, setup: 750 },"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 343,
+          "note": "",
+          "sourceLine": "    price: { monthly: 289, annual: 2890, setup: 750 },"
+        }
+      ],
+      "notes": "Original price object with monthly blank;299 is explicit hypothetical exercise answer, original monthly289 remains website source.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "fixes-id",
+      "title": "Rename without breaking links.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 496
+      },
+      "displayedFile": "src/content/work.js",
+      "relation": "adapted-refactor-source",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/content/work.js",
+          "line": 4,
+          "note": "",
+          "sourceLine": "    id: 'sbb-software',"
+        },
+        {
+          "root": "current",
+          "path": "src/content/work.js",
+          "line": 120,
+          "note": "",
+          "sourceLine": "export const HERO_STACK = ['stofpad', 'sbb-software', 'revive-portal']"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 73,
+          "note": "",
+          "sourceLine": "export const HERO_STACK = ['Stofpad Biltong', 'SBB Software', 'Revive Portal']"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 196,
+          "note": "",
+          "sourceLine": "    lane: 'Client work',"
+        }
+      ],
+      "notes": "Stable sbb-software ID was added by refactor; original record had name SBB Software and HERO_STACK referred to display names. Example truncates object and three-item hero array to one entry.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "fixes-target",
+      "title": "A click is not always a swipe.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 514
+      },
+      "displayedFile": "src/features/work/useWorkCarousel.js",
+      "relation": "original-source-fragment",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/work/useWorkCarousel.js",
+          "line": 77,
+          "note": "",
+          "sourceLine": "    if (event.target.closest('button, a')) return"
+        },
+        {
+          "root": "original",
+          "path": "src/hooks/useWorkCarousel.js",
+          "line": 77,
+          "note": "",
+          "sourceLine": "    if (event.target.closest('button, a')) return"
+        }
+      ],
+      "notes": "Original closest button/link guard, semicolon added. Touch/mouse drag distinction genuinely exists in original JS.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "fixes-timer",
+      "title": "Milliseconds into seconds.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 532
+      },
+      "displayedFile": "src/features/work/useWorkCarousel.js",
+      "relation": "original-source-fragment",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/work/useWorkCarousel.js",
+          "line": 4,
+          "note": "",
+          "sourceLine": "const AUTOPLAY_MS = 20000 // showcase advances every 20s, giving visitors time to actually read each demo before it moves on"
+        },
+        {
+          "root": "original",
+          "path": "src/hooks/useWorkCarousel.js",
+          "line": 4,
+          "note": "",
+          "sourceLine": "const AUTOPLAY_MS = 20000 // showcase advances every 20s, giving visitors time to actually read each demo before it moves on"
+        }
+      ],
+      "notes": "Original constant20000 with comment removed and semicolon added.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "fixes-threshold",
+      "title": "Give a gesture a threshold.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 550
+      },
+      "displayedFile": "src/features/work/useWorkCarousel.js",
+      "relation": "original-source-fragment",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/work/useWorkCarousel.js",
+          "line": 5,
+          "note": "",
+          "sourceLine": "const DRAG_THRESHOLD = 56 // px a drag must clear to count as an intentional swipe"
+        },
+        {
+          "root": "original",
+          "path": "src/hooks/useWorkCarousel.js",
+          "line": 5,
+          "note": "",
+          "sourceLine": "const DRAG_THRESHOLD = 56 // px a drag must clear to count as an intentional swipe"
+        }
+      ],
+      "notes": "Original constant56 with comment removed and semicolon added; actual swipe acceptance uses >=DRAG_THRESHOLD at113.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    },
+    {
+      "id": "fixes-check",
+      "title": "Catch a platform surprise.",
+      "game": {
+        "path": "src/lessons.js",
+        "line": 568
+      },
+      "displayedFile": "Project import checks",
+      "relation": "generated-example-from-refactor-tooling",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "scripts/check-imports.mjs",
+          "line": 21,
+          "note": "",
+          "sourceLine": "        for (const segment of path.relative(root, target).split(path.sep)) {"
+        },
+        {
+          "root": "current",
+          "path": "package.json",
+          "line": 11,
+          "note": "",
+          "sourceLine": "    \"check:imports\": \"node scripts/check-imports.mjs\","
+        },
+        {
+          "root": "original",
+          "path": "src/components/Hero.jsx",
+          "line": 1,
+          "note": "",
+          "sourceLine": "import { useEffect, useState } from 'react'"
+        }
+      ],
+      "notes": "Deliberately incorrect lowercase hero.jsx import is an invented teaching case, not an observed bug. Actual import checker was added during refactor, absent original project; original Hero.jsx file exists.",
+      "proseAndQuestion": "New game curriculum written around the referenced topic; not copied wholesale from supplied website."
+    }
+  ],
+  "labs": [
+    {
+      "id": "height",
+      "game": {
+        "path": "src/app.js",
+        "line": 93
+      },
+      "relation": "generated-practice-lab",
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/styles/global.css",
+          "line": 318,
+          "note": "",
+          "sourceLine": "  min-height: 44px;"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/global.css",
+          "line": 316,
+          "note": "",
+          "sourceLine": "  min-height: 44px;"
+        }
+      ],
+      "notes": "New .demo-card/.demo-button markup,CSS and evaluation task.44px target echoes actual original shared button rule; no original executable component copied."
+    },
+    {
+      "id": "padding",
+      "game": {
+        "path": "src/app.js",
+        "line": 94
+      },
+      "relation": "generated-practice-lab",
+      "evidence": [],
+      "notes": "New .demo-card example and24px goal. Generic padding technique; no direct source-fragment provenance claimed."
+    },
+    {
+      "id": "mobile",
+      "game": {
+        "path": "src/app.js",
+        "line": 95
+      },
+      "relation": "generated-practice-lab",
+      "evidence": [],
+      "notes": "New demo-actions flex column at320/row at640 and suggested480px breakpoint. Generic responsive technique, not original site breakpoint-specific rule."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "HTML",
+      "definition": "The structure of a page: headings, paragraphs, links and buttons.",
+      "example": "<button>Start</button>",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "markup-label"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/components/Hero.jsx",
+          "line": 126,
+          "note": "",
+          "sourceLine": "              Discuss your website"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Hero.jsx",
+          "line": 133,
+          "note": "",
+          "sourceLine": "              Discuss your website"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "JSX",
+      "definition": "HTML-like notation inside JavaScript that React turns into interface elements.",
+      "example": "<h3>{plan.name}</h3>",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "markup-value"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/hosting/HostingSection.jsx",
+          "line": 137,
+          "note": "",
+          "sourceLine": "      <h3 className=\"offer-name\">{plan.name}</h3>"
+        },
+        {
+          "root": "original",
+          "path": "src/components/HostingSection.jsx",
+          "line": 143,
+          "note": "",
+          "sourceLine": "      <h3 className=\"offer-name\">{plan.name}</h3>"
+        },
+        {
+          "root": "current",
+          "path": "src/content/hosting.js",
+          "line": 7,
+          "note": "",
+          "sourceLine": "    name: 'Static Lite',"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 333,
+          "note": "",
+          "sourceLine": "    name: 'Static Lite',"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "CSS",
+      "definition": "Rules that style elements: colour, spacing, shape and layout.",
+      "example": ".button { min-height: 44px; }",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "styles-height"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/styles/global.css",
+          "line": 318,
+          "note": "",
+          "sourceLine": "  min-height: 44px;"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/global.css",
+          "line": 316,
+          "note": "",
+          "sourceLine": "  min-height: 44px;"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Selector",
+      "definition": "The part of a CSS rule that chooses which elements it applies to.",
+      "example": ".button selects a class; #contact selects an id.",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "markup-class",
+        "markup-href"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/components/Hero.jsx",
+          "line": 121,
+          "note": "",
+          "sourceLine": "              className=\"button button-primary button-large\""
+        },
+        {
+          "root": "original",
+          "path": "src/components/Hero.jsx",
+          "line": 128,
+          "note": "",
+          "sourceLine": "              className=\"button button-primary button-large\""
+        },
+        {
+          "root": "current",
+          "path": "src/components/Hero.jsx",
+          "line": 122,
+          "note": "",
+          "sourceLine": "              href=\"#contact\""
+        },
+        {
+          "root": "original",
+          "path": "src/components/Hero.jsx",
+          "line": 129,
+          "note": "",
+          "sourceLine": "              href=\"#contact\""
+        },
+        {
+          "root": "current",
+          "path": "src/features/enquiry/ContactSection.jsx",
+          "line": 16,
+          "note": "",
+          "sourceLine": "    <section id=\"contact\" className=\"section contact\" aria-labelledby=\"contact-title\">"
+        },
+        {
+          "root": "original",
+          "path": "src/components/ContactSection.jsx",
+          "line": 17,
+          "note": "",
+          "sourceLine": "    <section id=\"contact\" className=\"section contact\" aria-labelledby=\"contact-title\">"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Component",
+      "definition": "A reusable piece of interface, often written as a JavaScript function.",
+      "example": "<PlanCard plan={plan} />",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "markup-props"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/hosting/HostingSection.jsx",
+          "line": 217,
+          "note": "",
+          "sourceLine": "                <PlanCard key={plan.id} plan={plan} billing={billing} featured={plan.id === 'static'} glow={glow} rail={{ index, count: HOSTING_PLANS.length, trackRef: plansRail }} />"
+        },
+        {
+          "root": "original",
+          "path": "src/components/HostingSection.jsx",
+          "line": 209,
+          "note": "",
+          "sourceLine": "                <PlanCard key={plan.id} plan={plan} billing={billing} featured={plan.id === 'static'} glow={glow} rail={{ index, count: HOSTING_PLANS.length, trackRef: plansRail }} />"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Prop",
+      "definition": "An input passed to a component by its parent.",
+      "example": "billing=\"annual\"",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "markup-props"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/hosting/HostingSection.jsx",
+          "line": 217,
+          "note": "",
+          "sourceLine": "                <PlanCard key={plan.id} plan={plan} billing={billing} featured={plan.id === 'static'} glow={glow} rail={{ index, count: HOSTING_PLANS.length, trackRef: plansRail }} />"
+        },
+        {
+          "root": "original",
+          "path": "src/components/HostingSection.jsx",
+          "line": 209,
+          "note": "",
+          "sourceLine": "                <PlanCard key={plan.id} plan={plan} billing={billing} featured={plan.id === 'static'} glow={glow} rail={{ index, count: HOSTING_PLANS.length, trackRef: plansRail }} />"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "State",
+      "definition": "A value React remembers and uses to update the screen.",
+      "example": "const [open, setOpen] = useState(false);",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "react-state"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/theme/PaletteControl.jsx",
+          "line": 20,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 174,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Hook",
+      "definition": "A function for React state, effects or reusable behaviour. Hook names start with use.",
+      "example": "useState • useEffect • useWorkCarousel",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "files-behaviour"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/work/useWorkCarousel.js",
+          "line": 58,
+          "note": "",
+          "sourceLine": "  const step = (dir) => {"
+        },
+        {
+          "root": "original",
+          "path": "src/hooks/useWorkCarousel.js",
+          "line": 58,
+          "note": "",
+          "sourceLine": "  const step = (dir) => {"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Effect",
+      "definition": "Work that React runs after rendering, often to synchronise with timers or browser systems.",
+      "example": "useEffect(() => { /* start timer */ }, []);",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "react-cleanup"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/work/useWorkCarousel.js",
+          "line": 34,
+          "note": "",
+          "sourceLine": "  useEffect(() => {"
+        },
+        {
+          "root": "original",
+          "path": "src/hooks/useWorkCarousel.js",
+          "line": 34,
+          "note": "",
+          "sourceLine": "  useEffect(() => {"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Cleanup",
+      "definition": "Code that stops or undoes work started by an effect.",
+      "example": "return () => clearInterval(id);",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "react-cleanup"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/work/useWorkCarousel.js",
+          "line": 34,
+          "note": "",
+          "sourceLine": "  useEffect(() => {"
+        },
+        {
+          "root": "original",
+          "path": "src/hooks/useWorkCarousel.js",
+          "line": 34,
+          "note": "",
+          "sourceLine": "  useEffect(() => {"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Object",
+      "definition": "A group of named properties and their values.",
+      "example": "{ monthly: 289, annual: 2890 }",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "files-prices"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/content/hosting.js",
+          "line": 17,
+          "note": "",
+          "sourceLine": "    price: { monthly: 289, annual: 2890, setup: 750 },"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 343,
+          "note": "",
+          "sourceLine": "    price: { monthly: 289, annual: 2890, setup: 750 },"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Array",
+      "definition": "An ordered list of values.",
+      "example": "['static-lite', 'static', 'static-catalogue']",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "files-prices"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/content/hosting.js",
+          "line": 17,
+          "note": "",
+          "sourceLine": "    price: { monthly: 289, annual: 2890, setup: 750 },"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 343,
+          "note": "",
+          "sourceLine": "    price: { monthly: 289, annual: 2890, setup: 750 },"
+        }
+      ],
+      "notes": "Plan IDs occur in both project data; this array representation is assembled for teaching."
+    },
+    {
+      "term": "Function",
+      "definition": "A reusable set of instructions that runs when called.",
+      "example": "const next = () => setIndex(1);",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "react-next"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/work/useWorkCarousel.js",
+          "line": 38,
+          "note": "",
+          "sourceLine": "      setIndex((current) => (current + 1) % count)"
+        },
+        {
+          "root": "original",
+          "path": "src/hooks/useWorkCarousel.js",
+          "line": 38,
+          "note": "",
+          "sourceLine": "      setIndex((current) => (current + 1) % count)"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Boolean",
+      "definition": "One of two values: true or false.",
+      "example": "const open = false;",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "react-state"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/theme/PaletteControl.jsx",
+          "line": 20,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 174,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Import / export",
+      "definition": "How one JavaScript file makes code available to another.",
+      "example": "export const price = 289;",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "fixes-check"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "scripts/check-imports.mjs",
+          "line": 21,
+          "note": "",
+          "sourceLine": "        for (const segment of path.relative(root, target).split(path.sep)) {"
+        },
+        {
+          "root": "current",
+          "path": "package.json",
+          "line": 11,
+          "note": "",
+          "sourceLine": "    \"check:imports\": \"node scripts/check-imports.mjs\","
+        },
+        {
+          "root": "original",
+          "path": "src/components/Hero.jsx",
+          "line": 1,
+          "note": "",
+          "sourceLine": "import { useEffect, useState } from 'react'"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Media query",
+      "definition": "A condition that applies CSS for a particular viewport or preference.",
+      "example": "@media (max-width: 700px) { ... }",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "styles-mobile"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/styles/work.css",
+          "line": 684,
+          "note": "",
+          "sourceLine": "@media (max-width: 700px) {"
+        },
+        {
+          "root": "current",
+          "path": "src/styles/work.css",
+          "line": 694,
+          "note": "",
+          "sourceLine": "  .stage-btn { width: 44px; height: 44px; flex: 0 0 44px; }"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/work.css",
+          "line": 687,
+          "note": "",
+          "sourceLine": "@media (max-width: 700px) {"
+        },
+        {
+          "root": "original",
+          "path": "src/styles/work.css",
+          "line": 468,
+          "note": "",
+          "sourceLine": ".stage-btn {"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Padding / margin",
+      "definition": "Padding is inside an element's border. Margin is outside it.",
+      "example": "padding: 24px; margin: 16px;",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "styles-padding"
+      ],
+      "evidence": [],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Build",
+      "definition": "The step that turns maintained source into files ready to serve.",
+      "example": "src/ → build → dist/",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "files-source"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "package.json",
+          "line": 8,
+          "note": "",
+          "sourceLine": "    \"build\": \"vite build && vite build --ssr src/app/entry-server.jsx --outDir dist-ssr && node scripts/prerender.js\","
+        },
+        {
+          "root": "original",
+          "path": "package.json",
+          "line": 8,
+          "note": "",
+          "sourceLine": "    \"build\": \"vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node prerender.js\","
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Event handler",
+      "definition": "A function that responds to an action, such as a click.",
+      "example": "onClick={() => setOpen(true)}",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "react-click"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/features/theme/PaletteControl.jsx",
+          "line": 20,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 174,
+          "note": "",
+          "sourceLine": "  const [open, setOpen] = useState(false)"
+        },
+        {
+          "root": "current",
+          "path": "src/features/theme/PaletteControl.jsx",
+          "line": 105,
+          "note": "",
+          "sourceLine": "  const startHold = () => { heldRef.current = false; clearTimeout(holdTimer.current); holdTimer.current = setTimeout(() => { heldRef.current = true; setOpen(true) }, HOLD_MS) }"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 259,
+          "note": "",
+          "sourceLine": "  const startHold = () => { heldRef.current = false; clearTimeout(holdTimer.current); holdTimer.current = setTimeout(() => { heldRef.current = true; setOpen(true) }, HOLD_MS) }"
+        },
+        {
+          "root": "current",
+          "path": "src/features/theme/PaletteControl.jsx",
+          "line": 180,
+          "note": "",
+          "sourceLine": "        onContextMenu={(e) => { e.preventDefault(); setOpen(true) }}"
+        },
+        {
+          "root": "original",
+          "path": "src/components/Navbar.jsx",
+          "line": 334,
+          "note": "",
+          "sourceLine": "        onContextMenu={(e) => { e.preventDefault(); setOpen(true) }}"
+        }
+      ],
+      "notes": "Definition and assembled glossary structure were created for the game. Related snippets are simplified or generic; common syntax alone is not provenance or originality proof."
+    },
+    {
+      "term": "Stable id",
+      "definition": "An internal name kept consistent even when visible wording changes.",
+      "example": "id: 'sbb-software'",
+      "relation": "generated-glossary-entry",
+      "relatedLessons": [
+        "fixes-id"
+      ],
+      "evidence": [
+        {
+          "root": "current",
+          "path": "src/content/work.js",
+          "line": 4,
+          "note": "",
+          "sourceLine": "    id: 'sbb-software',"
+        },
+        {
+          "root": "current",
+          "path": "src/content/work.js",
+          "line": 120,
+          "note": "",
+          "sourceLine": "export const HERO_STACK = ['stofpad', 'sbb-software', 'revive-portal']"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 73,
+          "note": "",
+          "sourceLine": "export const HERO_STACK = ['Stofpad Biltong', 'SBB Software', 'Revive Portal']"
+        },
+        {
+          "root": "original",
+          "path": "src/config/site.js",
+          "line": 196,
+          "note": "",
+          "sourceLine": "    lane: 'Client work',"
+        }
+      ],
+      "notes": "Example ID stems from refactor, not original record."
+    }
+  ],
+  "teachingCaveats": [
+    {
+      "id": "files-prices",
+      "severity": "none",
+      "finding": "setup750 verified in original source; not a factual mismatch."
+    },
+    {
+      "id": "files-styles",
+      "severity": "clarification",
+      "finding": "CSS displays literal border-radius10px; real rule uses --radius-sm which resolves to10px. Identify as simplified."
+    },
+    {
+      "id": "styles-mobile",
+      "severity": "provenance-clarification",
+      "finding": "700px breakpoint is original but44px stage-button override is a new visual-pass change."
+    },
+    {
+      "id": "styles-grid",
+      "severity": "provenance-clarification",
+      "finding": "minmax on .work-body added in visual pass."
+    },
+    {
+      "id": "styles-stable",
+      "severity": "provenance-clarification",
+      "finding": "90px min-height added in visual pass; it is one part of stability work."
+    },
+    {
+      "id": "fixes-id",
+      "severity": "provenance-clarification",
+      "finding": "Stable IDs added in refactor, not present original."
+    },
+    {
+      "id": "react-click",
+      "severity": "clarification",
+      "finding": "Simplified fictional click handler; original picker opens via hold/context menu/key, and normal click rotates palettes."
+    },
+    {
+      "id": "react-cleanup",
+      "severity": "clarification",
+      "finding": "Short example intentionally omits real closure/dependencies/guard; unsafe to treat as full drop-in replacement."
+    },
+    {
+      "id": "markup-props",
+      "severity": "clarification",
+      "finding": "Omitted glow prop means example alone is not a functional call to the actual PlanCard."
+    },
+    {
+      "id": "fixes-check",
+      "severity": "clarification",
+      "finding": "Generated hypothetical typo, not evidence of a lowercase-import defect originally observed."
+    }
+  ],
+  "noAppOrDocumentEdits": true
+}

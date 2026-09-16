@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "xp": 54,
+  "round": 6,
+  "sessions": 1,
+  "stats": {
+    "files-prices": {
+      "seen": 2,
+      "independent": 1,
+      "box": 1,
+      "dueRound": 11,
+      "dueAt": 0,
+      "lastRound": 5
+    },
+    "files-styles": {
+      "seen": 2,
+      "independent": 0,
+      "box": 0,
+      "dueRound": 9,
+      "dueAt": 0,
+      "lastRound": 6
+    },
+    "files-behaviour": {
+      "seen": 1,
+      "independent": 1,
+      "box": 1,
+      "dueRound": 9,
+      "dueAt": 0,
+      "lastRound": 3
+    },
+    "files-assets": {
+      "seen": 1,
+      "independent": 1,
+      "box": 1,
+      "dueRound": 10,
+      "dueAt": 0,
+      "lastRound": 4
+    }
+  },
+  "history": [
+    {
+      "id": "files-prices",
+      "clean": false,
+      "round": 1,
+      "xp": 5
+    },
+    {
+      "id": "files-styles",
+      "clean": false,
+      "round": 2,
+      "xp": 8
+    },
+    {
+      "id": "files-behaviour",
+      "clean": true,
+      "round": 3,
+      "xp": 12
+    },
+    {
+      "id": "files-assets",
+      "clean": true,
+      "round": 4,
+      "xp": 12
+    },
+    {
+      "id": "files-prices",
+      "clean": true,
+      "round": 5,
+      "xp": 12
+    },
+    {
+      "id": "files-styles",
+      "clean": false,
+      "round": 6,
+      "xp": 5
+    }
+  ],
+  "labs": [],
+  "active": {
+    "chapter": "files",
+    "mode": "learn",
+    "lessonId": "files-styles",
+    "results": [
+      {
+        "id": "files-prices",
+        "clean": false,
+        "xp": 5
+      },
+      {
+        "id": "files-styles",
+        "clean": false,
+        "xp": 8
+      },
+      {
+        "id": "files-behaviour",
+        "clean": true,
+        "xp": 12
+      },
+      {
+        "id": "files-assets",
+        "clean": true,
+        "xp": 12
+      },
+      {
+        "id": "files-prices",
+        "clean": true,
+        "xp": 12
+      },
+      {
+        "id": "files-styles",
+        "clean": false,
+        "xp": 5
+      }
+    ],
+    "missed": false,
+    "hinted": false,
+    "revealed": false,
+    "done": true
+  }
+}

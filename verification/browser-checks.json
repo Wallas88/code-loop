@@ -1,0 +1,96 @@
+{
+  "viewports": [
+    {
+      "width": 320,
+      "views": [
+        "home",
+        "lesson",
+        "lab",
+        "guide",
+        "progress"
+      ]
+    },
+    {
+      "width": 390,
+      "views": [
+        "home",
+        "lesson",
+        "lab",
+        "guide",
+        "progress"
+      ]
+    },
+    {
+      "width": 600,
+      "views": [
+        "home",
+        "lesson",
+        "lab",
+        "guide",
+        "progress"
+      ]
+    },
+    {
+      "width": 760,
+      "views": [
+        "home",
+        "lesson",
+        "lab",
+        "guide",
+        "progress"
+      ]
+    },
+    {
+      "width": 820,
+      "views": [
+        "home",
+        "lesson",
+        "lab",
+        "guide",
+        "progress"
+      ]
+    },
+    {
+      "width": 1024,
+      "views": [
+        "home",
+        "lesson",
+        "lab",
+        "guide",
+        "progress"
+      ]
+    },
+    {
+      "width": 1440,
+      "views": [
+        "home",
+        "lesson",
+        "lab",
+        "guide",
+        "progress"
+      ]
+    },
+    {
+      "width": 1920,
+      "views": [
+        "home",
+        "lesson",
+        "lab",
+        "guide",
+        "progress"
+      ]
+    }
+  ],
+  "flows": [
+    "wrong answer, retry, hint, solution walkthrough, spaced repeat, six-round completion and reload resume",
+    "backup download and restore",
+    "real CSS computed-style checks, responsive rule at 320/640, single reward per lab",
+    "typed code answer, Enter key submission and completed-answer controls",
+    "practice remains usable when localStorage is blocked"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "limits": [
+    "Edge/Chromium with touch emulation. Not physical-device or Safari testing."
+  ]
+}

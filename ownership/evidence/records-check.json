@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-09-16T14:40:02.288Z",
+  "baseline": {
+    "baselineRecordedAt": "2026-09-16T14:40:02.256Z",
+    "trackedFiles": 15,
+    "changed": [],
+    "missing": [],
+    "added": []
+  },
+  "originalAndCopiedFontNoticesMatch": true,
+  "localDocumentationLinksChecked": 14,
+  "localDocumentationLinksValid": true,
+  "integrityCheckerFixtureCases": [
+    "unchanged",
+    "changed",
+    "missing",
+    "added"
+  ],
+  "scope": "Ownership-document checks only; application behaviour was not changed or retested in this step."
+}

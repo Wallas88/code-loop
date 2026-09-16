@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "product": "Code Loop",
+  "packageVersion": "1.0.0",
+  "recordedAt": "2026-09-16T14:40:02.256Z",
+  "purpose": "Local source fingerprint; not proof of authorship, legal ownership or independently verified creation time.",
+  "scope": "Paths relative to the Code Loop project folder. Includes source, launchers, assets, tests and the project README.",
+  "excluded": [
+    "ownership",
+    "verification",
+    ".git",
+    "node_modules",
+    "dist",
+    "dist-ssr",
+    ".env*",
+    ".dev.vars",
+    "*Zone.Identifier*",
+    "non-regular files"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5832,
+      "sha256": "05e14ba131c1a98c66216cd6c468b7984e8bfdf93617d5131ad8f5a8ed5491d0"
+    },
+    {
+      "path": "assets/LICENSE-InstrumentSerif.txt",
+      "bytes": 4405,
+      "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+    },
+    {
+      "path": "assets/LICENSE-Manrope.txt",
+      "bytes": 4384,
+      "sha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c"
+    },
+    {
+      "path": "assets/instrument-serif-italic-latin.woff2",
+      "bytes": 22128,
+      "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7"
+    },
+    {
+      "path": "assets/manrope-latin.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "path": "index.html",
+      "bytes": 993,
+      "sha256": "e9d6bf437bcf8fc2131abb0e0776bf22612917eef77d0ca5ed668d0612a283bd"
+    },
+    {
+      "path": "package.json",
+      "bytes": 211,
+      "sha256": "62a0679e79687a98e07791a308851aae27dd8a5bc2b5d6d8a259d847a675cd31"
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 3042,
+      "sha256": "3729c079c6a7af52290158f1655c32587a9fc3a68fc030bf36f17bc4e0572b1f"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 27480,
+      "sha256": "14c057c06f89695c3ea41df22977496515d828efb4f4258779787c8ca037bf06"
+    },
+    {
+      "path": "src/learning.js",
+      "bytes": 6307,
+      "sha256": "ee2827693533dc109fa1174d271a99d6f1729165dcb43ca47d47584e0535eb1c"
+    },
+    {
+      "path": "src/lessons.js",
+      "bytes": 26332,
+      "sha256": "21533672798f2a9ca0cbee0689b2e7cf7ddbfb0feea9708f5f549abc4f3076ca"
+    },
+    {
+      "path": "start.cmd",
+      "bytes": 53,
+      "sha256": "c769896ff5d02204ece2a7daac358da932b460999d495213b1f6242f1b70792e"
+    },
+    {
+      "path": "start.sh",
+      "bytes": 65,
+      "sha256": "bfec4640de6c29909c80b0de73124ebf42556149da19b4e6812c4e33066d2e72"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 38517,
+      "sha256": "7aae4a8caf14c73961b2b674d424d454d52a4c87d99132e8c405521930869f8e"
+    },
+    {
+      "path": "tests/learning.test.mjs",
+      "bytes": 4368,
+      "sha256": "afcb892f9ca6e946b898b6b9c6f423ccf8583a1606900b0e3dcd4f3c2404a6e0"
+    }
+  ]
+}

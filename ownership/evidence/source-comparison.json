@@ -1,0 +1,833 @@
+{
+  "recordedAt": "2026-09-16T14:45:01.655Z",
+  "purpose": "Local provenance comparison; records matching files, not legal ownership or originality.",
+  "roots": {
+    "suppliedWebsite": "C:/Users/waldo/OneDrive/Desktop/site-audit",
+    "restructuredWebsite": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\site-audit-refactor\\site",
+    "reviewedWebsite": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\site-flow-preview\\site",
+    "game": "C:\\Users\\waldo\\Documents\\Codex\\2026-09-16\\i-x20\\outputs\\code-loop"
+  },
+  "method": "SHA-256 whole-file comparison of maintained files. Excludes builds, dependencies, metadata and environment secrets. Lesson excerpts require a separate contextual review.",
+  "limitations": [
+    "A lack of an exact whole-file match does not prove that no code was adapted or that the work is original.",
+    "Existing source hashes and this local timestamp are not independent proof of creation date or legal title.",
+    "Original website ownership is based on the user statement; this comparison does not check previous contributors or contracts."
+  ],
+  "originalBaselineComparison": {
+    "recordedFiles": 107,
+    "unchanged": 107,
+    "differences": [],
+    "files": [
+      {
+        "path": ".gitignore",
+        "recordedSha256": "fe49d55254080db1d1fd27b75924a60211ceae6be17c8b3eb36c93d5975d0892",
+        "currentSha256": "fe49d55254080db1d1fd27b75924a60211ceae6be17c8b3eb36c93d5975d0892",
+        "matches": true
+      },
+      {
+        "path": "index.html",
+        "recordedSha256": "37b6f1b2a53c25af30824352089c2afd9ed4e9d360badd12e2817a6401fbbe34",
+        "currentSha256": "37b6f1b2a53c25af30824352089c2afd9ed4e9d360badd12e2817a6401fbbe34",
+        "matches": true
+      },
+      {
+        "path": "package-lock.json",
+        "recordedSha256": "0aef03ae47216f917081bd2d5a54390391f611ab579eeac8a6aaffc48076dd74",
+        "currentSha256": "0aef03ae47216f917081bd2d5a54390391f611ab579eeac8a6aaffc48076dd74",
+        "matches": true
+      },
+      {
+        "path": "package.json",
+        "recordedSha256": "aa82a500ca429f2e582780dab190627f0f19b52114276e52219b938d4c436702",
+        "currentSha256": "aa82a500ca429f2e582780dab190627f0f19b52114276e52219b938d4c436702",
+        "matches": true
+      },
+      {
+        "path": "prerender.js",
+        "recordedSha256": "8fa8be9463d6185879f81592ebd7ad508dcf2bf1e8cee3899e3cc7c62c9329f1",
+        "currentSha256": "8fa8be9463d6185879f81592ebd7ad508dcf2bf1e8cee3899e3cc7c62c9329f1",
+        "matches": true
+      },
+      {
+        "path": "public/.well-known/security.txt",
+        "recordedSha256": "b9a546eb6036d2c34343e3422e370b4f588024d8694aac8989501fd09659fc5f",
+        "currentSha256": "b9a546eb6036d2c34343e3422e370b4f588024d8694aac8989501fd09659fc5f",
+        "matches": true
+      },
+      {
+        "path": "public/404.html",
+        "recordedSha256": "02978c282d823f4d4092a77801adda52359a457cf5102740921a8baa189d2858",
+        "currentSha256": "02978c282d823f4d4092a77801adda52359a457cf5102740921a8baa189d2858",
+        "matches": true
+      },
+      {
+        "path": "public/favicon.ico",
+        "recordedSha256": "640d0693f8c75021389759e4148fd8d6de63cb710f88d2447a422a7530323e1b",
+        "currentSha256": "640d0693f8c75021389759e4148fd8d6de63cb710f88d2447a422a7530323e1b",
+        "matches": true
+      },
+      {
+        "path": "public/fonts/caveat-latin-ext.woff2",
+        "recordedSha256": "f626b95c1efa95cf6b7c9b043d3bbe8862b6abbe5f55a082102f33f7de2fd4f9",
+        "currentSha256": "f626b95c1efa95cf6b7c9b043d3bbe8862b6abbe5f55a082102f33f7de2fd4f9",
+        "matches": true
+      },
+      {
+        "path": "public/fonts/caveat-latin.woff2",
+        "recordedSha256": "891951df5e8b5b0f0bc760d31375405e795c666b5add70437de12d4a6482b33f",
+        "currentSha256": "891951df5e8b5b0f0bc760d31375405e795c666b5add70437de12d4a6482b33f",
+        "matches": true
+      },
+      {
+        "path": "public/fonts/instrument-serif-italic-latin-ext.woff2",
+        "recordedSha256": "d0014821252a8a770bf7551641572f239a8ede83d75652d84fef0c3627751baf",
+        "currentSha256": "d0014821252a8a770bf7551641572f239a8ede83d75652d84fef0c3627751baf",
+        "matches": true
+      },
+      {
+        "path": "public/fonts/instrument-serif-italic-latin.woff2",
+        "recordedSha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7",
+        "currentSha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7",
+        "matches": true
+      },
+      {
+        "path": "public/fonts/LICENSE-Caveat.txt",
+        "recordedSha256": "1f9d81d094273d82f3898a1ee8b598a717d050ecbf5ff7bede105b704880157b",
+        "currentSha256": "1f9d81d094273d82f3898a1ee8b598a717d050ecbf5ff7bede105b704880157b",
+        "matches": true
+      },
+      {
+        "path": "public/fonts/LICENSE-InstrumentSerif.txt",
+        "recordedSha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521",
+        "currentSha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521",
+        "matches": true
+      },
+      {
+        "path": "public/fonts/LICENSE-Manrope.txt",
+        "recordedSha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c",
+        "currentSha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c",
+        "matches": true
+      },
+      {
+        "path": "public/fonts/manrope-latin-ext.woff2",
+        "recordedSha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb",
+        "currentSha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb",
+        "matches": true
+      },
+      {
+        "path": "public/fonts/manrope-latin.woff2",
+        "recordedSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+        "currentSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+        "matches": true
+      },
+      {
+        "path": "public/humans.txt",
+        "recordedSha256": "0280817f5ebe60c637aadb9612108fb6c3b5976805b0c36e9ff0da54220be6ba",
+        "currentSha256": "0280817f5ebe60c637aadb9612108fb6c3b5976805b0c36e9ff0da54220be6ba",
+        "matches": true
+      },
+      {
+        "path": "public/robots.txt",
+        "recordedSha256": "1f51155b11976c76df92f48619af4fe5e94223ec71d818c60dc10706e4d434fe",
+        "currentSha256": "1f51155b11976c76df92f48619af4fe5e94223ec71d818c60dc10706e4d434fe",
+        "matches": true
+      },
+      {
+        "path": "public/security.txt",
+        "recordedSha256": "b9a546eb6036d2c34343e3422e370b4f588024d8694aac8989501fd09659fc5f",
+        "currentSha256": "b9a546eb6036d2c34343e3422e370b4f588024d8694aac8989501fd09659fc5f",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/corvale-mobile.jpg",
+        "recordedSha256": "4c01792bd14aefbab18f5eb5b9cb5868b8ed7bcfa595db56239232cabd338f5b",
+        "currentSha256": "4c01792bd14aefbab18f5eb5b9cb5868b8ed7bcfa595db56239232cabd338f5b",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/corvale.jpg",
+        "recordedSha256": "3f46022d1a1c76575973ef394b049a853eacd3bb7927cbb9ca05181833f50957",
+        "currentSha256": "3f46022d1a1c76575973ef394b049a853eacd3bb7927cbb9ca05181833f50957",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/fenlow-mobile.jpg",
+        "recordedSha256": "394ef64e939b8da4611a58795bac713ca2cdd1693720a5f0f60f0842cfd87bef",
+        "currentSha256": "394ef64e939b8da4611a58795bac713ca2cdd1693720a5f0f60f0842cfd87bef",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/fenlow.jpg",
+        "recordedSha256": "a2a619ad80be8d0c85351a865ca0ed59ce78db709bc143e8499031322b3823ae",
+        "currentSha256": "a2a619ad80be8d0c85351a865ca0ed59ce78db709bc143e8499031322b3823ae",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/revive-portal-mobile.jpg",
+        "recordedSha256": "537498e83204b17e6be0685d0657a992ee90d4310935bdf8eb0e7740dcb43311",
+        "currentSha256": "537498e83204b17e6be0685d0657a992ee90d4310935bdf8eb0e7740dcb43311",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/revive-portal.jpg",
+        "recordedSha256": "8cf899745bd679106ed26f0b6a8f6c5d0177f8beee8c6ba103026dffd63d7020",
+        "currentSha256": "8cf899745bd679106ed26f0b6a8f6c5d0177f8beee8c6ba103026dffd63d7020",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/sbb-mobile.jpg",
+        "recordedSha256": "04dbef948147d591e1693a55eb254b407a268d6bb24bde57bfea7ba3fd49995b",
+        "currentSha256": "04dbef948147d591e1693a55eb254b407a268d6bb24bde57bfea7ba3fd49995b",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/sbb.jpg",
+        "recordedSha256": "aa14c095c8d5475e4566b169bda94b98eead49e1fd815ea896b4c1d9094aeebf",
+        "currentSha256": "aa14c095c8d5475e4566b169bda94b98eead49e1fd815ea896b4c1d9094aeebf",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/solvex-mobile.jpg",
+        "recordedSha256": "92dbf95bad2e448dd1e7abc8903237b79755d9e2a48bf799ae6bf75963b1cee0",
+        "currentSha256": "92dbf95bad2e448dd1e7abc8903237b79755d9e2a48bf799ae6bf75963b1cee0",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/solvex.jpg",
+        "recordedSha256": "55535a121e48abeec849357b176d12e3eaddafc6ac0dbe0699d0c739ca559546",
+        "currentSha256": "55535a121e48abeec849357b176d12e3eaddafc6ac0dbe0699d0c739ca559546",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/stofpad-mobile.jpg",
+        "recordedSha256": "e0906aec7e9734958fe1a3a199b3bd73ef157792541d1a0c2c497d19d160b675",
+        "currentSha256": "e0906aec7e9734958fe1a3a199b3bd73ef157792541d1a0c2c497d19d160b675",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/stofpad.jpg",
+        "recordedSha256": "91140045f8f556197984d37316d3046ee976e56faf3410f95290ab6ca0faf3da",
+        "currentSha256": "91140045f8f556197984d37316d3046ee976e56faf3410f95290ab6ca0faf3da",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/vandric-mobile.jpg",
+        "recordedSha256": "7604df882b6954feb9889bc0ce5c35d8abe594978d06a74816f6db757eebaf3a",
+        "currentSha256": "7604df882b6954feb9889bc0ce5c35d8abe594978d06a74816f6db757eebaf3a",
+        "matches": true
+      },
+      {
+        "path": "public/showcase/vandric.jpg",
+        "recordedSha256": "e915ced5055a877c8e687df9bd34db4e4c28539401d186372d711137b1dc6d35",
+        "currentSha256": "e915ced5055a877c8e687df9bd34db4e4c28539401d186372d711137b1dc6d35",
+        "matches": true
+      },
+      {
+        "path": "public/sitemap.xml",
+        "recordedSha256": "18cae2989ee7b4eb2273341ee34a1282b044b274217ac3fc1912933f720db43e",
+        "currentSha256": "18cae2989ee7b4eb2273341ee34a1282b044b274217ac3fc1912933f720db43e",
+        "matches": true
+      },
+      {
+        "path": "public/siterevive-icon.png",
+        "recordedSha256": "a61b62cd564d08d48174fe9144b9e1b0bf44bf6e48357c8fe2fbfc84f9baee58",
+        "currentSha256": "a61b62cd564d08d48174fe9144b9e1b0bf44bf6e48357c8fe2fbfc84f9baee58",
+        "matches": true
+      },
+      {
+        "path": "public/siterevivesa-og.jpg",
+        "recordedSha256": "d21c3dbba10b1c2c024763f0eb2747b33a5bb8ab439513095fe2f9360c1e6d5d",
+        "currentSha256": "d21c3dbba10b1c2c024763f0eb2747b33a5bb8ab439513095fe2f9360c1e6d5d",
+        "matches": true
+      },
+      {
+        "path": "public/sr-brand-favicon.png",
+        "recordedSha256": "90214745e1cac5326b40aa2940e82d736d4f86ef33c932107d0e1cb13962fce3",
+        "currentSha256": "90214745e1cac5326b40aa2940e82d736d4f86ef33c932107d0e1cb13962fce3",
+        "matches": true
+      },
+      {
+        "path": "public/sr-brand-logo.webp",
+        "recordedSha256": "47eb17b1151b8a5befb66f9eabb226d7477738fefa812ed6ef4f3d4b24f38c12",
+        "currentSha256": "47eb17b1151b8a5befb66f9eabb226d7477738fefa812ed6ef4f3d4b24f38c12",
+        "matches": true
+      },
+      {
+        "path": "public/sr-logo-master.svg",
+        "recordedSha256": "131a4357e4055a887af432ae5cd7afadfd0cea5c44a47202ecc82b4d1e1cabb9",
+        "currentSha256": "131a4357e4055a887af432ae5cd7afadfd0cea5c44a47202ecc82b4d1e1cabb9",
+        "matches": true
+      },
+      {
+        "path": "public/theme-restore.js",
+        "recordedSha256": "76f0f0a9f10df957df5f96669280ecbb7551046a4c7b5d605dd2065f3f87fd8d",
+        "currentSha256": "76f0f0a9f10df957df5f96669280ecbb7551046a4c7b5d605dd2065f3f87fd8d",
+        "matches": true
+      },
+      {
+        "path": "public/_headers",
+        "recordedSha256": "b43a4c325be385cdb897b7764a299f9da94aa3c0dcd341a70ac35309a7d18795",
+        "currentSha256": "b43a4c325be385cdb897b7764a299f9da94aa3c0dcd341a70ac35309a7d18795",
+        "matches": true
+      },
+      {
+        "path": "public/_redirects",
+        "recordedSha256": "9ddaf70e76c273f2839cbc133072bf6bf72b3c3e905b04521e2087ed566f72f9",
+        "currentSha256": "9ddaf70e76c273f2839cbc133072bf6bf72b3c3e905b04521e2087ed566f72f9",
+        "matches": true
+      },
+      {
+        "path": "README.md",
+        "recordedSha256": "2370a1de189da7afb125d6fc130811c5c595d0728b927137ba7ec63e53b7b308",
+        "currentSha256": "2370a1de189da7afb125d6fc130811c5c595d0728b927137ba7ec63e53b7b308",
+        "matches": true
+      },
+      {
+        "path": "senior-engineer-audit.md",
+        "recordedSha256": "f95bbc5a83f02ade8dce52c372aabcb32cdd91d8854a21980e14e16e6e762b50",
+        "currentSha256": "f95bbc5a83f02ade8dce52c372aabcb32cdd91d8854a21980e14e16e6e762b50",
+        "matches": true
+      },
+      {
+        "path": "src/App.jsx",
+        "recordedSha256": "560c981d5ad293ddb43f549ab627fcf931b024497961d2d1e9f7c3864761d59c",
+        "currentSha256": "560c981d5ad293ddb43f549ab627fcf931b024497961d2d1e9f7c3864761d59c",
+        "matches": true
+      },
+      {
+        "path": "src/components/AboutSection.jsx",
+        "recordedSha256": "d1a2406852cdfc528ba81cea9e90a3df19263c7f18b60d7d03d61d8af5aaa4bc",
+        "currentSha256": "d1a2406852cdfc528ba81cea9e90a3df19263c7f18b60d7d03d61d8af5aaa4bc",
+        "matches": true
+      },
+      {
+        "path": "src/components/ArrowIcon.jsx",
+        "recordedSha256": "f39548129b422f59e1bca59d7635ca8d5615c37095ceb4266053e204cdc20b9d",
+        "currentSha256": "f39548129b422f59e1bca59d7635ca8d5615c37095ceb4266053e204cdc20b9d",
+        "matches": true
+      },
+      {
+        "path": "src/components/Brand.jsx",
+        "recordedSha256": "6c4ee697316a17e09bd9385198ff04fc6fbde3d722a3c3c2cd3bb19d13978fb2",
+        "currentSha256": "6c4ee697316a17e09bd9385198ff04fc6fbde3d722a3c3c2cd3bb19d13978fb2",
+        "matches": true
+      },
+      {
+        "path": "src/components/CapabilitySection.jsx",
+        "recordedSha256": "6cd2716d3305575bcf9faf1b038462810e450937aaf045a9f341e66c3e0a4683",
+        "currentSha256": "6cd2716d3305575bcf9faf1b038462810e450937aaf045a9f341e66c3e0a4683",
+        "matches": true
+      },
+      {
+        "path": "src/components/CheckIcon.jsx",
+        "recordedSha256": "8a2c0d4b8594c843bbedb01d45f04210694a08d772832d3382262d6b603eb4ca",
+        "currentSha256": "8a2c0d4b8594c843bbedb01d45f04210694a08d772832d3382262d6b603eb4ca",
+        "matches": true
+      },
+      {
+        "path": "src/components/ContactSection.jsx",
+        "recordedSha256": "4aa4962fa6dca5c552eb961f9e3e1f299872b5bcd748816d90c3d5a5ed225aab",
+        "currentSha256": "4aa4962fa6dca5c552eb961f9e3e1f299872b5bcd748816d90c3d5a5ed225aab",
+        "matches": true
+      },
+      {
+        "path": "src/components/FaqSection.jsx",
+        "recordedSha256": "f7a7b4c469a0cb58475538a91bc5c1cf7e6569b27e4335cdb00bc37674938a99",
+        "currentSha256": "f7a7b4c469a0cb58475538a91bc5c1cf7e6569b27e4335cdb00bc37674938a99",
+        "matches": true
+      },
+      {
+        "path": "src/components/Footer.jsx",
+        "recordedSha256": "92e93196a87c19defb8354f15ca04579b7e969f4f3eb38311eeb8c1fc5dba1ef",
+        "currentSha256": "92e93196a87c19defb8354f15ca04579b7e969f4f3eb38311eeb8c1fc5dba1ef",
+        "matches": true
+      },
+      {
+        "path": "src/components/Hero.jsx",
+        "recordedSha256": "b9d8357914111ba67945909cff9f5ee86a7aa846f09a04e8b720ac3093ff9a80",
+        "currentSha256": "b9d8357914111ba67945909cff9f5ee86a7aa846f09a04e8b720ac3093ff9a80",
+        "matches": true
+      },
+      {
+        "path": "src/components/HostingSection.jsx",
+        "recordedSha256": "292c973aa1188b0637d7051d25f53504b2c46b0405ba0e6307ca987a9a97c8ef",
+        "currentSha256": "292c973aa1188b0637d7051d25f53504b2c46b0405ba0e6307ca987a9a97c8ef",
+        "matches": true
+      },
+      {
+        "path": "src/components/LegalPage.jsx",
+        "recordedSha256": "263ff13d3ccafb10ce051d79f55b448f6b9c538669578e3f2d07c19ee74e9664",
+        "currentSha256": "263ff13d3ccafb10ce051d79f55b448f6b9c538669578e3f2d07c19ee74e9664",
+        "matches": true
+      },
+      {
+        "path": "src/components/Navbar.jsx",
+        "recordedSha256": "be3afbf7008e60ebd7cf105b778c8d67d844d7f2ad0f2d43c95c03090953f4ba",
+        "currentSha256": "be3afbf7008e60ebd7cf105b778c8d67d844d7f2ad0f2d43c95c03090953f4ba",
+        "matches": true
+      },
+      {
+        "path": "src/components/ProcessSection.jsx",
+        "recordedSha256": "ce5e776eb1fef67a4473876e4ac55dbdfecf8a9efbe94efec03b7987c92e9ef4",
+        "currentSha256": "ce5e776eb1fef67a4473876e4ac55dbdfecf8a9efbe94efec03b7987c92e9ef4",
+        "matches": true
+      },
+      {
+        "path": "src/components/ProjectEnquiryForm.jsx",
+        "recordedSha256": "61d7e3cfd33b96f1e4dc473b1ebe0189d88644a4c0e3a231c913917de41bd1ea",
+        "currentSha256": "61d7e3cfd33b96f1e4dc473b1ebe0189d88644a4c0e3a231c913917de41bd1ea",
+        "matches": true
+      },
+      {
+        "path": "src/components/QualitySection.jsx",
+        "recordedSha256": "03ba09753c6a52035298292ecf94033428714136303aa9043b5861398f62eb8b",
+        "currentSha256": "03ba09753c6a52035298292ecf94033428714136303aa9043b5861398f62eb8b",
+        "matches": true
+      },
+      {
+        "path": "src/components/RailPager.jsx",
+        "recordedSha256": "81ac98efeaa65517cf14c054990f000e179868f09cd1b04f690b341f5dc31b6a",
+        "currentSha256": "81ac98efeaa65517cf14c054990f000e179868f09cd1b04f690b341f5dc31b6a",
+        "matches": true
+      },
+      {
+        "path": "src/components/ScopeQuiz.jsx",
+        "recordedSha256": "efbe73f48e99403aea23a2f0bab75322dadd734110d9088df1dc47a1296e1eb9",
+        "currentSha256": "efbe73f48e99403aea23a2f0bab75322dadd734110d9088df1dc47a1296e1eb9",
+        "matches": true
+      },
+      {
+        "path": "src/components/ServiceIcon.jsx",
+        "recordedSha256": "43e162ea15af0cde0c53e973d61ab1688a26edb05daea1ac3f5da40c385304ab",
+        "currentSha256": "43e162ea15af0cde0c53e973d61ab1688a26edb05daea1ac3f5da40c385304ab",
+        "matches": true
+      },
+      {
+        "path": "src/components/ServiceTerms.jsx",
+        "recordedSha256": "6c47b8f3dbe7b486f10d31631aa23ae64baf1b1317310a61b1d49c4963dbc6b7",
+        "currentSha256": "6c47b8f3dbe7b486f10d31631aa23ae64baf1b1317310a61b1d49c4963dbc6b7",
+        "matches": true
+      },
+      {
+        "path": "src/components/SignatureMark.jsx",
+        "recordedSha256": "c5bdca81ab5912344f10457efb8915028be00a7ec0c214c4634428a6cd9ce957",
+        "currentSha256": "c5bdca81ab5912344f10457efb8915028be00a7ec0c214c4634428a6cd9ce957",
+        "matches": true
+      },
+      {
+        "path": "src/components/SocialIcon.jsx",
+        "recordedSha256": "086b122562d844fc806828ff8c138a0f3aa06544dc1a9abde10d20092515d35b",
+        "currentSha256": "086b122562d844fc806828ff8c138a0f3aa06544dc1a9abde10d20092515d35b",
+        "matches": true
+      },
+      {
+        "path": "src/components/UnderTheHoodSection.jsx",
+        "recordedSha256": "b6bcd10efa8803549826027f905a00cbb66483ed9c74c1ed7d7f2af3926c9480",
+        "currentSha256": "b6bcd10efa8803549826027f905a00cbb66483ed9c74c1ed7d7f2af3926c9480",
+        "matches": true
+      },
+      {
+        "path": "src/components/WaldoCameo.jsx",
+        "recordedSha256": "7f27dd2e48fb15964786563d3b75c8c831144889f39297972bdfec00eda3ae19",
+        "currentSha256": "7f27dd2e48fb15964786563d3b75c8c831144889f39297972bdfec00eda3ae19",
+        "matches": true
+      },
+      {
+        "path": "src/components/WorkSection.jsx",
+        "recordedSha256": "fcaf9a5850e6816d7ebe1c04d9e408645b79864b9f79baec9837f6eac03819e7",
+        "currentSha256": "fcaf9a5850e6816d7ebe1c04d9e408645b79864b9f79baec9837f6eac03819e7",
+        "matches": true
+      },
+      {
+        "path": "src/config/site.js",
+        "recordedSha256": "ef3b854bd980fdc7843cf24ef089cc598c69ed89730ebe54b25246040f130b60",
+        "currentSha256": "ef3b854bd980fdc7843cf24ef089cc598c69ed89730ebe54b25246040f130b60",
+        "matches": true
+      },
+      {
+        "path": "src/entry-server.jsx",
+        "recordedSha256": "4dcc4e404014bb0d13ec197c61294f76d5a75963f60394c7a5b6e098d5423975",
+        "currentSha256": "4dcc4e404014bb0d13ec197c61294f76d5a75963f60394c7a5b6e098d5423975",
+        "matches": true
+      },
+      {
+        "path": "src/hooks/useCountdown.js",
+        "recordedSha256": "4a2eafa3755e0503af392fdc9148ca1b0953b4801c5ac4406f3ab34ff5f0253d",
+        "currentSha256": "4a2eafa3755e0503af392fdc9148ca1b0953b4801c5ac4406f3ab34ff5f0253d",
+        "matches": true
+      },
+      {
+        "path": "src/hooks/useCursorGlow.js",
+        "recordedSha256": "65570b67e449df50f107039d2ecc5ad5b036e95b9a4a95db7bd8f9cc821950eb",
+        "currentSha256": "65570b67e449df50f107039d2ecc5ad5b036e95b9a4a95db7bd8f9cc821950eb",
+        "matches": true
+      },
+      {
+        "path": "src/hooks/useMagneticPull.js",
+        "recordedSha256": "1b61a55d8e63844c991da159ad85dd39e2f9f803807ad58bf14b13243f79cab1",
+        "currentSha256": "1b61a55d8e63844c991da159ad85dd39e2f9f803807ad58bf14b13243f79cab1",
+        "matches": true
+      },
+      {
+        "path": "src/hooks/useReveal.js",
+        "recordedSha256": "5c0978b2946895a3188cc837927b8838e8974dfbb3615404c90720001612007d",
+        "currentSha256": "5c0978b2946895a3188cc837927b8838e8974dfbb3615404c90720001612007d",
+        "matches": true
+      },
+      {
+        "path": "src/hooks/useWorkCarousel.js",
+        "recordedSha256": "c6e43ac8de5c6daa911d92162332d83382806791fd50dfbbce9ea3d8d1640275",
+        "currentSha256": "c6e43ac8de5c6daa911d92162332d83382806791fd50dfbbce9ea3d8d1640275",
+        "matches": true
+      },
+      {
+        "path": "src/main.jsx",
+        "recordedSha256": "b8278928817dde37e986ddd2a9366429144928a1b969dc1cf61a5dfb51effa9c",
+        "currentSha256": "b8278928817dde37e986ddd2a9366429144928a1b969dc1cf61a5dfb51effa9c",
+        "matches": true
+      },
+      {
+        "path": "src/services/enquiryService.js",
+        "recordedSha256": "fc14135484a3051447731e86f20b1c2a0cecf24bd64c404f11159126612a01c5",
+        "currentSha256": "fc14135484a3051447731e86f20b1c2a0cecf24bd64c404f11159126612a01c5",
+        "matches": true
+      },
+      {
+        "path": "src/styles/about.css",
+        "recordedSha256": "298ccc0833657398102aa129aa41a87808c8d82d10aa84fdd8d74cd622e01b08",
+        "currentSha256": "298ccc0833657398102aa129aa41a87808c8d82d10aa84fdd8d74cd622e01b08",
+        "matches": true
+      },
+      {
+        "path": "src/styles/capabilities.css",
+        "recordedSha256": "c77c8acdd8d8c8822a347a5eef847c04f3b66ffd8ca50aad3f9fa2cdf7d2ca97",
+        "currentSha256": "c77c8acdd8d8c8822a347a5eef847c04f3b66ffd8ca50aad3f9fa2cdf7d2ca97",
+        "matches": true
+      },
+      {
+        "path": "src/styles/contact.css",
+        "recordedSha256": "068d13c558a9e13fc537c6d7f4ddb434c9f3db0e907237c6f059dae94d1d4329",
+        "currentSha256": "068d13c558a9e13fc537c6d7f4ddb434c9f3db0e907237c6f059dae94d1d4329",
+        "matches": true
+      },
+      {
+        "path": "src/styles/faq.css",
+        "recordedSha256": "4c28726b9184ad79611864e618e0303e168f29b8ce30ada57832ffa9bd02f47d",
+        "currentSha256": "4c28726b9184ad79611864e618e0303e168f29b8ce30ada57832ffa9bd02f47d",
+        "matches": true
+      },
+      {
+        "path": "src/styles/fonts.css",
+        "recordedSha256": "2f299b21891abb13826b3cc2d9bc337dbae27ed7af1e7f1ad20336907f03d635",
+        "currentSha256": "2f299b21891abb13826b3cc2d9bc337dbae27ed7af1e7f1ad20336907f03d635",
+        "matches": true
+      },
+      {
+        "path": "src/styles/footer.css",
+        "recordedSha256": "d0951bbbb97a76943cda00c81ff835fefe922e8c5be345cdbabaeaa2b9f0ae4d",
+        "currentSha256": "d0951bbbb97a76943cda00c81ff835fefe922e8c5be345cdbabaeaa2b9f0ae4d",
+        "matches": true
+      },
+      {
+        "path": "src/styles/global.css",
+        "recordedSha256": "c8a507eb57c0d41591e95d29f845d073c985bda7663a2ebf8001743c1421287e",
+        "currentSha256": "c8a507eb57c0d41591e95d29f845d073c985bda7663a2ebf8001743c1421287e",
+        "matches": true
+      },
+      {
+        "path": "src/styles/hero.css",
+        "recordedSha256": "2edea64537b290eb3bc34aa2f83e38224af31ac4239f59ed9f562a9eb26429b6",
+        "currentSha256": "2edea64537b290eb3bc34aa2f83e38224af31ac4239f59ed9f562a9eb26429b6",
+        "matches": true
+      },
+      {
+        "path": "src/styles/hosting.css",
+        "recordedSha256": "c4e909d0dfb99fd5672b5a35ead8286eb49ae2fda19a6aea48ed630e768b354e",
+        "currentSha256": "c4e909d0dfb99fd5672b5a35ead8286eb49ae2fda19a6aea48ed630e768b354e",
+        "matches": true
+      },
+      {
+        "path": "src/styles/index.css",
+        "recordedSha256": "86be1651d3cd78872cca1cb47b3ce3f7e383e4b503ad1e64e2d82e45b3664a27",
+        "currentSha256": "86be1651d3cd78872cca1cb47b3ce3f7e383e4b503ad1e64e2d82e45b3664a27",
+        "matches": true
+      },
+      {
+        "path": "src/styles/legal.css",
+        "recordedSha256": "9b5d42cf552c27ede76a65c29136f61d2edc63e6b354d2372c5dcede172a4866",
+        "currentSha256": "9b5d42cf552c27ede76a65c29136f61d2edc63e6b354d2372c5dcede172a4866",
+        "matches": true
+      },
+      {
+        "path": "src/styles/navbar.css",
+        "recordedSha256": "6742617cc7b100cb91c0c90f4e622c0c863585c49a925e76b11dbd554c978945",
+        "currentSha256": "6742617cc7b100cb91c0c90f4e622c0c863585c49a925e76b11dbd554c978945",
+        "matches": true
+      },
+      {
+        "path": "src/styles/process.css",
+        "recordedSha256": "323b36976882b91f3f1a3f2f1d730d150fb2e1e3ae180aff5ce7e8190597217b",
+        "currentSha256": "323b36976882b91f3f1a3f2f1d730d150fb2e1e3ae180aff5ce7e8190597217b",
+        "matches": true
+      },
+      {
+        "path": "src/styles/quality.css",
+        "recordedSha256": "582c12019065e9b46bec40d023c1aa8ec6178352eb5862e9b5cf23cee00fc16e",
+        "currentSha256": "582c12019065e9b46bec40d023c1aa8ec6178352eb5862e9b5cf23cee00fc16e",
+        "matches": true
+      },
+      {
+        "path": "src/styles/signature.css",
+        "recordedSha256": "0f48748e6a4d6ce47258c1d2ab548f1c2fe8b97ced9374a3468250ffb63df4c8",
+        "currentSha256": "0f48748e6a4d6ce47258c1d2ab548f1c2fe8b97ced9374a3468250ffb63df4c8",
+        "matches": true
+      },
+      {
+        "path": "src/styles/tokens.css",
+        "recordedSha256": "70b62798ad208aa455abad51f63a697dac32812d3e205f411724e25f8eb60459",
+        "currentSha256": "70b62798ad208aa455abad51f63a697dac32812d3e205f411724e25f8eb60459",
+        "matches": true
+      },
+      {
+        "path": "src/styles/underhood.css",
+        "recordedSha256": "199272809b75915b8792c478e45ca96da12a86ebf856a0d50d6d917dab07286b",
+        "currentSha256": "199272809b75915b8792c478e45ca96da12a86ebf856a0d50d6d917dab07286b",
+        "matches": true
+      },
+      {
+        "path": "src/styles/work.css",
+        "recordedSha256": "9e26a3669e26ec6ad2025adfbaac458e2f03b6704eb4f2db45635bf0f107d1d5",
+        "currentSha256": "9e26a3669e26ec6ad2025adfbaac458e2f03b6704eb4f2db45635bf0f107d1d5",
+        "matches": true
+      },
+      {
+        "path": "src/utils/consoleEasterEgg.js",
+        "recordedSha256": "201a594fb9102713e63b3e80404096f333a021a37315b4bc0bf8d3f0b6502522",
+        "currentSha256": "201a594fb9102713e63b3e80404096f333a021a37315b4bc0bf8d3f0b6502522",
+        "matches": true
+      },
+      {
+        "path": "src/utils/easterEggs.js",
+        "recordedSha256": "1cb6e933d54e75e74ed6f256747cd212fc10a92edc51a2741e416f3b6430eb14",
+        "currentSha256": "1cb6e933d54e75e74ed6f256747cd212fc10a92edc51a2741e416f3b6430eb14",
+        "matches": true
+      },
+      {
+        "path": "src/utils/enquiryPrefill.js",
+        "recordedSha256": "ceecda960856f04a150dcad512ff236181abc6a366f2d94e87ccbad0c80e3849",
+        "currentSha256": "ceecda960856f04a150dcad512ff236181abc6a366f2d94e87ccbad0c80e3849",
+        "matches": true
+      },
+      {
+        "path": "src/utils/scopeQuiz.js",
+        "recordedSha256": "7727316a40029d3e8905854c2c433081cb76dc4c2119459f1ffea3ed4009bace",
+        "currentSha256": "7727316a40029d3e8905854c2c433081cb76dc4c2119459f1ffea3ed4009bace",
+        "matches": true
+      },
+      {
+        "path": "tests/creative-pass.test.js",
+        "recordedSha256": "f2b045dde19b48803a70f3cbf393a6c1a11b2eeaf9501659422c11a69a49abf1",
+        "currentSha256": "f2b045dde19b48803a70f3cbf393a6c1a11b2eeaf9501659422c11a69a49abf1",
+        "matches": true
+      },
+      {
+        "path": "tests/README.md",
+        "recordedSha256": "09c20beafdd156e8fcc99c94d3ab2d450eaf3ef2b8f5e689a1efbe2c104a4d2b",
+        "currentSha256": "09c20beafdd156e8fcc99c94d3ab2d450eaf3ef2b8f5e689a1efbe2c104a4d2b",
+        "matches": true
+      },
+      {
+        "path": "tests/review-fixes.test.js",
+        "recordedSha256": "e4b748cc0426ab95f9c5e0f44064aa4c3283ecd2ff4bf7e096dae405f3009d87",
+        "currentSha256": "e4b748cc0426ab95f9c5e0f44064aa4c3283ecd2ff4bf7e096dae405f3009d87",
+        "matches": true
+      },
+      {
+        "path": "vite.config.js",
+        "recordedSha256": "02f2fbf1f9e7dc9c4e0f759c272546cf44410f1e4299836143788611ad2fa14f",
+        "currentSha256": "02f2fbf1f9e7dc9c4e0f759c272546cf44410f1e4299836143788611ad2fa14f",
+        "matches": true
+      },
+      {
+        "path": "worker/index.js",
+        "recordedSha256": "13a2b5ef37d0b108ed807234ba863bc9c738e0b199d56e8f9e842da1483b10cf",
+        "currentSha256": "13a2b5ef37d0b108ed807234ba863bc9c738e0b199d56e8f9e842da1483b10cf",
+        "matches": true
+      },
+      {
+        "path": "wrangler.jsonc",
+        "recordedSha256": "35e15f493a883a1752bc9dfd388521eea8262b3658f853fd5231155893c35473",
+        "currentSha256": "35e15f493a883a1752bc9dfd388521eea8262b3658f853fd5231155893c35473",
+        "matches": true
+      }
+    ]
+  },
+  "gameBaselineComparison": {
+    "baselineRecordedAt": "2026-09-16T14:40:02.256Z",
+    "trackedFiles": 15,
+    "changed": [],
+    "missing": [],
+    "added": []
+  },
+  "gameFiles": [
+    {
+      "path": "README.md",
+      "sha256": "05e14ba131c1a98c66216cd6c468b7984e8bfdf93617d5131ad8f5a8ed5491d0",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    },
+    {
+      "path": "assets/LICENSE-InstrumentSerif.txt",
+      "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [
+          "public/fonts/LICENSE-InstrumentSerif.txt"
+        ],
+        "restructuredWebsite": [
+          "public/fonts/LICENSE-InstrumentSerif.txt"
+        ],
+        "reviewedWebsite": [
+          "public/fonts/LICENSE-InstrumentSerif.txt"
+        ]
+      }
+    },
+    {
+      "path": "assets/LICENSE-Manrope.txt",
+      "sha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [
+          "public/fonts/LICENSE-Manrope.txt"
+        ],
+        "restructuredWebsite": [
+          "public/fonts/LICENSE-Manrope.txt"
+        ],
+        "reviewedWebsite": [
+          "public/fonts/LICENSE-Manrope.txt"
+        ]
+      }
+    },
+    {
+      "path": "assets/instrument-serif-italic-latin.woff2",
+      "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [
+          "public/fonts/instrument-serif-italic-latin.woff2"
+        ],
+        "restructuredWebsite": [
+          "public/fonts/instrument-serif-italic-latin.woff2"
+        ],
+        "reviewedWebsite": [
+          "public/fonts/instrument-serif-italic-latin.woff2"
+        ]
+      }
+    },
+    {
+      "path": "assets/manrope-latin.woff2",
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [
+          "public/fonts/manrope-latin.woff2"
+        ],
+        "restructuredWebsite": [
+          "public/fonts/manrope-latin.woff2"
+        ],
+        "reviewedWebsite": [
+          "public/fonts/manrope-latin.woff2"
+        ]
+      }
+    },
+    {
+      "path": "index.html",
+      "sha256": "e9d6bf437bcf8fc2131abb0e0776bf22612917eef77d0ca5ed668d0612a283bd",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    },
+    {
+      "path": "package.json",
+      "sha256": "62a0679e79687a98e07791a308851aae27dd8a5bc2b5d6d8a259d847a675cd31",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    },
+    {
+      "path": "server.mjs",
+      "sha256": "3729c079c6a7af52290158f1655c32587a9fc3a68fc030bf36f17bc4e0572b1f",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    },
+    {
+      "path": "src/app.js",
+      "sha256": "14c057c06f89695c3ea41df22977496515d828efb4f4258779787c8ca037bf06",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    },
+    {
+      "path": "src/learning.js",
+      "sha256": "ee2827693533dc109fa1174d271a99d6f1729165dcb43ca47d47584e0535eb1c",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    },
+    {
+      "path": "src/lessons.js",
+      "sha256": "21533672798f2a9ca0cbee0689b2e7cf7ddbfb0feea9708f5f549abc4f3076ca",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    },
+    {
+      "path": "start.cmd",
+      "sha256": "c769896ff5d02204ece2a7daac358da932b460999d495213b1f6242f1b70792e",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    },
+    {
+      "path": "start.sh",
+      "sha256": "bfec4640de6c29909c80b0de73124ebf42556149da19b4e6812c4e33066d2e72",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    },
+    {
+      "path": "styles.css",
+      "sha256": "7aae4a8caf14c73961b2b674d424d454d52a4c87d99132e8c405521930869f8e",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    },
+    {
+      "path": "tests/learning.test.mjs",
+      "sha256": "afcb892f9ca6e946b898b6b9c6f423ccf8583a1606900b0e3dcd4f3c2404a6e0",
+      "exactWholeFileMatches": {
+        "suppliedWebsite": [],
+        "restructuredWebsite": [],
+        "reviewedWebsite": []
+      }
+    }
+  ]
+}

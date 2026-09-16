@@ -1,0 +1,12 @@
+# Dependencies (none today, but a future npm install must not be committed)
+node_modules/
+
+# Local environment and logs
+.env
+.env.*
+*.log
+
+# OS and OneDrive clutter
+.DS_Store
+Thumbs.db
+desktop.ini
