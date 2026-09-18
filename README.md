@@ -1,10 +1,14 @@
-# Code Loop — your local code practice game
+# Code Loop — a code practice game
 
 Built for Waldo Trytsman (company name: Code Waldo), using small teaching examples from the SiteReviveSA review copy. The game is separate from the website project. It does not edit or deploy that website.
 
 Ownership, licence notices and preparation for a possible future product release are collected in [ownership/README.md](ownership/README.md). The records include fields still to confirm and a draft notice; they are not a legal registration or an adopted customer licence.
 
-## Open it
+## Play it
+
+**https://wallas88.github.io/code-loop/** — runs in the browser, nothing to install. Progress is saved in that browser only (localStorage); export a backup from **Your progress** if you switch browsers or devices.
+
+## Run it locally
 
 While the local server is running, open **http://127.0.0.1:4180/**.
 
