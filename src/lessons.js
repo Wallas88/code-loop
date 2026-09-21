@@ -51,17 +51,17 @@ export const LESSONS = [
     "id": "files-prices",
     "chapter": "files",
     "title": "A price has a home.",
-    "file": "src/content/hosting.js",
+    "file": "src/content/hosting.ts",
     "code": "price: {\n  monthly: 289,\n  annual: 2890,\n  setup: 750\n}",
     "teach": "Content files store the information a component displays. A hosting price is data; the button's colour is styling.",
     "prompt": "You want to change the Static Lite monthly price. Which file should you open?",
     "choices": [
       "src/styles/hosting.css",
-      "src/content/hosting.js",
+      "src/content/hosting.ts",
       "public/showcase/sbb.jpg"
     ],
     "answer": 1,
-    "why": "src/content/hosting.js holds the plan data. HostingSection reads that data and displays it. You can change a price without editing the layout.",
+    "why": "src/content/hosting.ts holds the plan data. HostingSection reads that data and displays it. You can change a price without editing the layout.",
     "hint": "Look for the folder named content.",
     "type": "choice"
   },
@@ -75,8 +75,8 @@ export const LESSONS = [
     "prompt": "Where would you investigate the shared button shape?",
     "choices": [
       "src/styles/global.css",
-      "src/content/hosting.js",
-      "worker/index.js"
+      "src/content/hosting.ts",
+      "worker/index.ts"
     ],
     "answer": 0,
     "why": "The shared .button rules live in global.css. Component styles can add to them, so check the relevant component stylesheet if a button differs.",
@@ -87,17 +87,17 @@ export const LESSONS = [
     "id": "files-behaviour",
     "chapter": "files",
     "title": "Find what makes it move.",
-    "file": "src/features/work/useWorkCarousel.js",
-    "code": "const step = (dir) => {\n  const next = (index + dir + count) % count;\n  setIndex(next);\n};",
+    "file": "src/features/work/use-work-carousel.ts",
+    "code": "function step(dir) {\n  const next = (index + dir + count) % count;\n  setIndex(next);\n}",
     "teach": "The showcase component describes what appears. Its carousel hook manages behaviour, such as selecting the next project. This is a shortened excerpt.",
     "prompt": "You need to understand what the next-project arrow does. Start in…",
     "choices": [
       "public/showcase/",
-      "src/content/faqs.js",
-      "src/features/work/useWorkCarousel.js"
+      "src/content/faqs.ts",
+      "src/features/work/use-work-carousel.ts"
     ],
     "answer": 2,
-    "why": "The carousel hook owns the changing project index and movement. WorkSection.jsx connects that behaviour to the visible buttons.",
+    "why": "The carousel hook owns the changing project index and movement. WorkSection.tsx connects that behaviour to the visible buttons.",
     "hint": "A file named use… is often a React hook: a reusable piece of behaviour.",
     "type": "choice"
   },
@@ -115,8 +115,8 @@ export const LESSONS = [
       "src/app/"
     ],
     "answer": 1,
-    "why": "Images belong in public/showcase/. Their filenames are referenced by the project data in src/content/work.js.",
-    "hint": "Choose the folder that stores assets, rather than JavaScript.",
+    "why": "Images belong in public/showcase/. Their filenames are referenced by the project data in src/content/work.ts.",
+    "hint": "Choose the folder that stores assets, rather than code.",
     "type": "choice"
   },
   {
@@ -142,16 +142,16 @@ export const LESSONS = [
     "chapter": "files",
     "title": "Keep a feature together.",
     "file": "src/features/theme/",
-    "code": "theme/\n  PaletteControl.jsx\n  colors.js\n  palettes.js",
+    "code": "theme/\n  PaletteControl.tsx\n  colors.ts\n  palettes.ts",
     "teach": "A feature folder groups a related interface and its supporting code. The colour picker has its own feature, separate from navigation layout.",
     "prompt": "Where do you start when learning how custom colours are calculated?",
     "choices": [
-      "src/features/theme/colors.js",
-      "src/pages/legal/PrivacyNotice.jsx",
-      "src/content/offers.js"
+      "src/features/theme/colors.ts",
+      "src/pages/legal/PrivacyNotice.tsx",
+      "src/content/offers.ts"
     ],
     "answer": 0,
-    "why": "colors.js holds colour calculations. PaletteControl.jsx uses them to operate the picker. A clear boundary makes the code easier to follow.",
+    "why": "colors.ts holds colour calculations. PaletteControl.tsx uses them to operate the picker. A clear boundary makes the code easier to follow.",
     "hint": "Choose the file that describes the calculation.",
     "type": "choice"
   },
@@ -159,14 +159,14 @@ export const LESSONS = [
     "id": "markup-label",
     "chapter": "markup",
     "title": "Read a button aloud.",
-    "file": "src/components/Hero.jsx",
+    "file": "src/components/Hero.tsx",
     "code": "<button>\n  Discuss your website\n</button>",
     "teach": "An opening tag starts an element. A closing tag ends it. Text between the two becomes the element's visible content. This example simplifies the site's link into a button.",
     "prompt": "What words appear on this button?",
     "choices": [
       "button",
       "Discuss your website",
-      "Hero.jsx"
+      "Hero.tsx"
     ],
     "answer": 1,
     "why": "The tag says what the element is. The words between the tags say what the visitor reads.",
@@ -177,7 +177,7 @@ export const LESSONS = [
     "id": "markup-class",
     "chapter": "markup",
     "title": "Connect JSX to CSS.",
-    "file": "src/components/Hero.jsx",
+    "file": "src/components/Hero.tsx",
     "code": "<a className=\"button button-primary\">\n  Discuss your website\n</a>",
     "teach": "JSX is the HTML-like notation React uses for its interface. In JSX, className attaches CSS classes. Here the element gets two classes.",
     "prompt": "Which CSS selector targets the button-primary class?",
@@ -195,7 +195,7 @@ export const LESSONS = [
     "id": "markup-href",
     "chapter": "markup",
     "title": "Where does this link go?",
-    "file": "src/components/Hero.jsx",
+    "file": "src/components/Hero.tsx",
     "code": "<a href=\"#contact\">\n  Discuss your website\n</a>",
     "teach": "href is a link's destination. A destination starting with # points to an element id on the same page.",
     "prompt": "What happens when someone follows this link?",
@@ -213,9 +213,9 @@ export const LESSONS = [
     "id": "markup-value",
     "chapter": "markup",
     "title": "Let the data speak.",
-    "file": "src/features/hosting/HostingSection.jsx",
+    "file": "src/features/hosting/HostingSection.tsx",
     "code": "const plan = { name: 'Static Lite' };\n\n<h3>{plan.name}</h3>",
-    "teach": "Curly braces inside JSX let JavaScript supply a value. A dot reads a named property from an object.",
+    "teach": "Curly braces inside JSX let code supply a value. A dot reads a named property from an object.",
     "prompt": "What does the heading display?",
     "choices": [
       "plan.name",
@@ -231,7 +231,7 @@ export const LESSONS = [
     "id": "markup-props",
     "chapter": "markup",
     "title": "One component, different input.",
-    "file": "src/features/hosting/HostingSection.jsx",
+    "file": "src/features/hosting/HostingSection.tsx",
     "code": "<PlanCard plan={plan} billing=\"annual\" />",
     "teach": "A component is a reusable piece of interface. Props are named inputs passed into it. This teaching excerpt passes plan data and a billing value.",
     "prompt": "What value is being passed in the billing prop?",
@@ -391,8 +391,8 @@ export const LESSONS = [
     "chapter": "react",
     "title": "Follow the click.",
     "file": "Teaching excerpt · theme picker",
-    "code": "const [open, setOpen] = useState(false);\n\n<button onClick={() => setOpen(true)}>\n  Open picker\n</button>",
-    "teach": "onClick receives a function to run after a click. The arrow notation () => defines a function here.",
+    "code": "const [open, setOpen] = useState(false);\n\nfunction openPicker() {\n  setOpen(true);\n}\n\n<button onClick={openPicker}>\n  Open picker\n</button>",
+    "teach": "onClick receives a function to run after a click. Here the function has a name, openPicker, and the button is handed that name.",
     "prompt": "What does clicking the button request?",
     "choices": [
       "A new CSS file",
@@ -409,7 +409,7 @@ export const LESSONS = [
     "chapter": "react",
     "title": "Use the previous value.",
     "file": "Teaching excerpt · carousel",
-    "code": "setIndex(current => current + 1);",
+    "code": "function increment(current) {\n  return current + 1;\n}\n\nsetIndex(increment);",
     "teach": "This updater function receives the current state value and returns the next value. The name current is just a parameter.",
     "prompt": "If current is 2, what value does this updater return?",
     "choices": [
@@ -426,7 +426,7 @@ export const LESSONS = [
     "id": "react-condition",
     "chapter": "react",
     "title": "One condition, two labels.",
-    "file": "src/features/enquiry/ProjectEnquiryForm.jsx",
+    "file": "src/features/enquiry/ProjectEnquiryForm.tsx",
     "code": "isSubmitting ? 'Sending…' : 'Send project enquiry'",
     "teach": "The conditional expression reads: condition ? value when true : value when false.",
     "prompt": "Which label appears when isSubmitting is true?",
@@ -445,7 +445,7 @@ export const LESSONS = [
     "chapter": "react",
     "title": "Build a card for each plan.",
     "file": "Teaching excerpt · hosting section",
-    "code": "HOSTING_PLANS.map(plan => (\n  <PlanCard key={plan.id} plan={plan} />\n))",
+    "code": "function planCard(plan) {\n  return <PlanCard key={plan.id} plan={plan} />;\n}\n\nHOSTING_PLANS.map(planCard)",
     "teach": "An array is a list. map transforms each list item into a new value. Here each plan becomes a card element, and key identifies it for React.",
     "prompt": "If there are four plans, how many PlanCard elements are created?",
     "choices": [
@@ -462,8 +462,8 @@ export const LESSONS = [
     "id": "react-cleanup",
     "chapter": "react",
     "title": "Stop the old timer.",
-    "file": "src/features/work/useWorkCarousel.js",
-    "code": "useEffect(() => {\n  const id = setInterval(next, 20000);\n  return () => clearInterval(id);\n}, []);",
+    "file": "src/features/work/use-work-carousel.ts",
+    "code": "function startTimer() {\n  const id = setInterval(next, 20000);\n  function stopTimer() {\n    clearInterval(id);\n  }\n  return stopTimer;\n}\n\nuseEffect(startTimer, []);",
     "teach": "An effect runs work outside rendering. Its returned function is cleanup. This shortened example creates a timer and provides a way to stop it.",
     "prompt": "What is the cleanup function for?",
     "choices": [
@@ -480,7 +480,7 @@ export const LESSONS = [
     "id": "fixes-price",
     "chapter": "fixes",
     "title": "Change only the monthly price.",
-    "file": "src/content/hosting.js",
+    "file": "src/content/hosting.ts",
     "code": "price: { monthly: ___, annual: 2890, setup: 750 }",
     "teach": "Each property in this object has its own value. Changing monthly does not automatically recalculate annual or setup in the real project.",
     "prompt": "For this exercise, set monthly to 299. Keep the other values as shown.",
@@ -496,7 +496,7 @@ export const LESSONS = [
     "id": "fixes-id",
     "chapter": "fixes",
     "title": "Rename without breaking links.",
-    "file": "src/content/work.js",
+    "file": "src/content/work.ts",
     "code": "{\n  id: 'sbb-software',\n  name: 'SBB Software'\n}\n\nHERO_STACK = ['sbb-software'];",
     "teach": "A stable id identifies a record even if its display name changes. Your refactor uses ids for hero selection.",
     "prompt": "You update this project's display name. Which value should stay stable?",
@@ -514,7 +514,7 @@ export const LESSONS = [
     "id": "fixes-target",
     "chapter": "fixes",
     "title": "A click is not always a swipe.",
-    "file": "src/features/work/useWorkCarousel.js",
+    "file": "src/features/work/use-work-carousel.ts",
     "code": "if (event.target.closest('button, a')) return;",
     "teach": "event.target is the element where the event started. closest checks it and its ancestors for a match. return leaves the handler early.",
     "prompt": "Why skip drag handling when the press starts on a button or link?",
@@ -532,7 +532,7 @@ export const LESSONS = [
     "id": "fixes-timer",
     "chapter": "fixes",
     "title": "Milliseconds into seconds.",
-    "file": "src/features/work/useWorkCarousel.js",
+    "file": "src/features/work/use-work-carousel.ts",
     "code": "const AUTOPLAY_MS = 20000;",
     "teach": "A millisecond is one thousandth of a second. Browser timer delays are written in milliseconds; actual execution can be delayed by the browser.",
     "prompt": "How many seconds does 20000 milliseconds represent?",
@@ -550,7 +550,7 @@ export const LESSONS = [
     "id": "fixes-threshold",
     "chapter": "fixes",
     "title": "Give a gesture a threshold.",
-    "file": "src/features/work/useWorkCarousel.js",
+    "file": "src/features/work/use-work-carousel.ts",
     "code": "const DRAG_THRESHOLD = 56;",
     "teach": "A threshold is the amount a movement must reach before it is accepted. This carousel requires a sufficiently large sideways movement.",
     "prompt": "Why have a swipe threshold?",
@@ -569,13 +569,13 @@ export const LESSONS = [
     "chapter": "fixes",
     "title": "Catch a platform surprise.",
     "file": "Project import checks",
-    "code": "import Hero from '../components/hero.jsx';\n\nActual filename: Hero.jsx",
+    "code": "import Hero from '../components/hero.tsx';\n\nActual filename: Hero.tsx",
     "teach": "Filename case matters on typical Linux filesystems. An import that appears to work on Windows can fail after moving to Linux.",
     "prompt": "What should be corrected?",
     "choices": [
       "Rename the whole src folder",
       "Remove the component",
-      "Use Hero.jsx with the same capital H"
+      "Use Hero.tsx with the same capital H"
     ],
     "answer": 2,
     "why": "The import path must match the actual filename. The project's import checker helps catch these mistakes before deploying.",
@@ -592,7 +592,7 @@ export const GLOSSARY = [
   ],
   [
     "JSX",
-    "HTML-like notation inside JavaScript that React turns into interface elements.",
+    "HTML-like notation inside TypeScript (or JavaScript) that React turns into interface elements.",
     "<h3>{plan.name}</h3>"
   ],
   [
@@ -607,7 +607,7 @@ export const GLOSSARY = [
   ],
   [
     "Component",
-    "A reusable piece of interface, often written as a JavaScript function.",
+    "A reusable piece of interface, written as a function that returns JSX.",
     "<PlanCard plan={plan} />"
   ],
   [
@@ -623,17 +623,17 @@ export const GLOSSARY = [
   [
     "Hook",
     "A function for React state, effects or reusable behaviour. Hook names start with use.",
-    "useState • useEffect • useWorkCarousel"
+    "useState • useEffect • useWorkCarousel (use-work-carousel.ts)"
   ],
   [
     "Effect",
     "Work that React runs after rendering, often to synchronise with timers or browser systems.",
-    "useEffect(() => { /* start timer */ }, []);"
+    "useEffect(startTimer, []);"
   ],
   [
     "Cleanup",
     "Code that stops or undoes work started by an effect.",
-    "return () => clearInterval(id);"
+    "return stopTimer;"
   ],
   [
     "Object",
@@ -648,7 +648,7 @@ export const GLOSSARY = [
   [
     "Function",
     "A reusable set of instructions that runs when called.",
-    "const next = () => setIndex(1);"
+    "function next() { setIndex(1); }"
   ],
   [
     "Boolean",
@@ -657,7 +657,7 @@ export const GLOSSARY = [
   ],
   [
     "Import / export",
-    "How one JavaScript file makes code available to another.",
+    "How one file makes code available to another.",
     "export const price = 289;"
   ],
   [
@@ -678,7 +678,7 @@ export const GLOSSARY = [
   [
     "Event handler",
     "A function that responds to an action, such as a click.",
-    "onClick={() => setOpen(true)}"
+    "onClick={openPicker}"
   ],
   [
     "Stable id",
